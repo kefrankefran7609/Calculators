@@ -40,8 +40,8 @@ if(vat === 'add'){
   document.querySelector('#total').textContent = (parseInt((start * rate)) + parseInt(start)).toFixed(2)
   document.querySelector('#resultName').textContent = 'Total including VAT:'
 } else {
-  document.querySelector('#vatAmount').textContent = (start / (1 + rate)).toFixed(2)
-  document.querySelector('#total').textContent = (start - (start / (1 + rate))).toFixed(2)
+  document.querySelector('#total').textContent = (start / (1 + rate)).toFixed(2)
+  document.querySelector('#vatAmount').textContent = (start - (start / (1 + rate))).toFixed(2)
 	document.querySelector('#resultName').textContent = 'Total excluding VAT:'
 }
 
