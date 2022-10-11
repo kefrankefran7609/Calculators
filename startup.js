@@ -18,7 +18,7 @@ inputs.forEach((input) => {
   });
 })
 
-/* Firing the calculator when submitting */
+/* Firing the one off set up costs calculator when submitting */
 document.querySelector('#calculate').addEventListener('click', (e) => {
 
 	/* Preventing the default behavior from the form */
@@ -44,18 +44,20 @@ document.querySelector('#calculate').addEventListener('click', (e) => {
  +document.querySelector('#professional').value +
  +document.querySelector('#licence').value +
  +document.querySelector('#inicialPromotion').value
- /* Making the total display as the result */
+ 
+ /* Displaying the result */
  document.querySelector('#total').textContent = total.toFixed(2) 
 })
 
 
+/* Firing the ongoing costs on a monthly basis calculator when submitting */
 document.querySelector('#calculateMonthly').addEventListener('click', (e) => {
 
 	/* Preventing the default behavior from the form */
  e.preventDefault()
 
+/* Calculating all the values */
  const total =
-+document.querySelector('#other5').value +
 +document.querySelector('#other6').value +
 +document.querySelector('#other7').value +
 +document.querySelector('#other8').value +
@@ -74,8 +76,7 @@ document.querySelector('#calculateMonthly').addEventListener('click', (e) => {
 +document.querySelector('#accounting').value +
 +document.querySelector('#legal').value +
 +document.querySelector('#promotion').value 
-  
-  document.querySelector('#monthly').textContent = total.toFixed(2)
-	
  
+ /* Displaying the result */
+  document.querySelector('#monthly').textContent = total.toFixed(2)
 })
