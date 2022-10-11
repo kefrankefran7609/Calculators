@@ -51,7 +51,7 @@ var deduction = gross + vatAmount - materials
 var deducted = (gross - materials) * tax
 
 /* Displaying the results */
-document.querySelector('#deducted').textContent = deducted.toFixed(2)
-document.querySelector('#net').textContent = (deduction - deducted + materials).toFixed(2)
+document.querySelector('#deducted').textContent = deducted.toFixed(2).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+document.querySelector('#net').textContent = (deduction - deducted + materials).toFixed(2).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
 
 })
