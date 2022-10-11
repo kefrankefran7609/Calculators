@@ -46,7 +46,7 @@ document.querySelector('#calculate').addEventListener('click', (e) => {
  +document.querySelector('#inicialPromotion').value
  
  /* Displaying the result */
- document.querySelector('#total').textContent = total.toFixed(2) 
+ document.querySelector('#total').textContent = total.toFixed(2).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") 
 })
 
 
@@ -78,5 +78,5 @@ document.querySelector('#calculateMonthly').addEventListener('click', (e) => {
 +document.querySelector('#promotion').value 
  
  /* Displaying the result */
-  document.querySelector('#monthly').textContent = total.toFixed(2)
+  document.querySelector('#monthly').textContent = total.toFixed(2).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
 })
