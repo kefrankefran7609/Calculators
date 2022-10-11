@@ -262,9 +262,9 @@ if(years === '22-23na'){
 
 
 /***** Adding all numbers and displaying the result *****/
-document.querySelector('#totalIncome').textContent = (bracket1 + bracket2 + bracket3 + bracket4 + bracket5 + additionalTax).toFixed(2)
-document.querySelector('#totalInsurance').textContent = totalInsurance.toFixed(2)
-document.querySelector('#totalTaxes').textContent = (bracket1 + bracket2 + bracket3 + bracket4 + bracket5 + additionalTax + totalInsurance).toFixed(2)
-document.querySelector('#netIncome').textContent = (salary - (bracket1 + bracket2 + bracket3 + bracket4 + bracket5 + additionalTax + totalInsurance)).toFixed(2)
+document.querySelector('#totalIncome').textContent = (bracket1 + bracket2 + bracket3 + bracket4 + bracket5 + additionalTax).toFixed(2).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+document.querySelector('#totalInsurance').textContent = totalInsurance.toFixed(2).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+document.querySelector('#totalTaxes').textContent = (bracket1 + bracket2 + bracket3 + bracket4 + bracket5 + additionalTax + totalInsurance).toFixed(2).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+document.querySelector('#netIncome').textContent = (salary - (bracket1 + bracket2 + bracket3 + bracket4 + bracket5 + additionalTax + totalInsurance)).toFixed(2).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
 /***** End of main Event Listener *****/
 })
