@@ -485,7 +485,7 @@ if(+price > +from6){
 
 
 /* Adding all numbers and displaying the result */
-document.querySelector('#total').textContent = (bracket1 + bracket2 + bracket3 + bracket4 + bracket5 + bracket6 + add).toFixed(2)
+document.querySelector('#total').textContent = (bracket1 + bracket2 + bracket3 + bracket4 + bracket5 + bracket6 + add).toFixed(2).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
 document.querySelector('#resultName').textContent = resultName
 /* End of Event Listener */
 })
