@@ -36,13 +36,13 @@ document.querySelector('#calculate').addEventListener('click', (e) => {
  
  
 if(vat === 'add'){ 
-	document.querySelector('#vatAmount').textContent = (start * rate).toFixed(2)
-  document.querySelector('#total').textContent = (parseInt((start * rate)) + parseInt(start)).toFixed(2)
+  document.querySelector('#vatAmount').textContent = (start * rate).toFixed(2).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+  document.querySelector('#total').textContent = ((+start * +rate) + +start).toFixed(2).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
   document.querySelector('#resultName').textContent = 'Total including VAT:'
 } else {
-  document.querySelector('#total').textContent = (start / (1 + rate)).toFixed(2)
-  document.querySelector('#vatAmount').textContent = (start - (start / (1 + rate))).toFixed(2)
-	document.querySelector('#resultName').textContent = 'Total excluding VAT:'
+  document.querySelector('#total').textContent = (start / (1 + rate)).toFixed(2).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+  document.querySelector('#vatAmount').textContent = (+start - (+start / (1 + +rate))).toFixed(2).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+  document.querySelector('#resultName').textContent = 'Total excluding VAT:'
 }
 
 /* End of Event Listener */
