@@ -1,4 +1,4 @@
-/* Payroll Calculator */
+/* VAT Calculator */
 
 /* Quering all inputs */
 const inputs = document.querySelectorAll('.input');
