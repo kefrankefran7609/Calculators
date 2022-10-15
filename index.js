@@ -422,7 +422,7 @@ if(+price > +to1){
 } else { 
 	var bracket1 = (+price - +from1) * +rate1
 }
-	console.log(bracket1 +' is bracket1')
+
 
 /* Calculating 2nd bracket */
 if(+price > +to2){
@@ -432,7 +432,7 @@ if(+price > +to2){
 } else { 
 	var bracket2 = (+price - +from2) * +rate2
 }
-	console.log('bracket 2 ' + bracket2)
+
 
 /* Calculating 3rd bracket */
 if(+price > +to3){
@@ -442,14 +442,14 @@ if(+price > +to3){
 } else { 
 	var bracket3 = (+price - +from3) * +rate3
 }
-	console.log('bracket 3 ' + bracket3)
+
 
 /* Calculating 4th bracket */
 if(country === 'england' || country === 'ireland'){
 if(+price > +from4){
 	var bracket4 = (+price - +from4) * +rate4
 } else { var bracket4 = 0 
-} console.log('bracket 4 ' + bracket4) 
+} 
 } else { 
 	if(+price > +to4){
 	var bracket4 = (+to4 - +from4) * +rate4
@@ -457,31 +457,28 @@ if(+price > +from4){
 	var bracket4 = 0
 } else { 
 	var bracket4 = (+price - +from4) * +rate4
-	} console.log('bracket 4 ' + bracket4) 
-} 
+	}} 
 
 /* Calculating 5th bracket for Wales */
 if((country === 'wales' && situation === 'first') || country === 'scotland'){
 if(+price > +from5){
 	var bracket5 = (+price - +from5) * +rate5
 } else { var bracket5 = 0 
-} console.log('bracket 5 ' + bracket5) 
-} else if(country === 'wales' && situation === 'second'){ 
+}} else if(country === 'wales' && situation === 'second'){ 
 	if(+price > +to5){
 	var bracket5 = (+to5 - +from5) * +rate5
 } else if(+price < +from5){
 	var bracket5 = 0
 } else { 
 	var bracket5 = (+price - +from5) * +rate5
-	} console.log('bracket 5 ' + bracket5) 
-}
+	}}
 
 /* Calculating 6th bracket for Wales */
 if(country === 'wales' && situation === 'second'){
 if(+price > +from6){
 	var bracket6 = (+price - +from6) * +rate6
 } else { var bracket6 = 0
-} console.log('bracket 6 ' + bracket6)}
+}}
 
 
 /* Adding all numbers and displaying the result */
