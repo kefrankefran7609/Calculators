@@ -124,7 +124,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("https://api.airtable.com/v0/appPX1LpXetaEQH89/SDLT%20Calculators/recDHv4jYjcVO3G8L", requestOptions)
+fetch("https://api.airtable.com/v0/apphKFqKdClqcgF26/tblcknIFR9BQKOuYY/recAFvSv5TJVqN70k", requestOptions)
   .then(response => response.text())
   .then(data =>  { 
   const parsed = JSON.parse(data)
@@ -155,7 +155,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("https://api.airtable.com/v0/appPX1LpXetaEQH89/SDLT%20Calculators/recaV2PCQZzEkTXQY", requestOptions)
+fetch("https://api.airtable.com/v0/apphKFqKdClqcgF26/tblcknIFR9BQKOuYY/recvhhb9Thgdsz1w5", requestOptions)
   .then(response => response.text())
   .then(data =>  { 
   const parsed = JSON.parse(data)
@@ -189,7 +189,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("https://api.airtable.com/v0/appPX1LpXetaEQH89/SDLT%20Calculators/recPQtmqQCOWlujDo", requestOptions)
+fetch("https://api.airtable.com/v0/apphKFqKdClqcgF26/tblcknIFR9BQKOuYY/reckxO0344JwJ6reZ", requestOptions)
   .then(response => response.text())
   .then(data =>  { 
   const parsed = JSON.parse(data)
@@ -225,7 +225,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("https://api.airtable.com/v0/appPX1LpXetaEQH89/SDLT%20Calculators/rec91xkZeaAsLUOTY", requestOptions)
+fetch("https://api.airtable.com/v0/apphKFqKdClqcgF26/tblcknIFR9BQKOuYY/recXvQikGcuvTlzhJ", requestOptions)
   .then(response => response.text())
   .then(data =>  { 
   const parsed = JSON.parse(data)
@@ -259,7 +259,7 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("https://api.airtable.com/v0/appPX1LpXetaEQH89/SDLT%20Calculators/recOQeWhD5qmYWkt7", requestOptions)
+fetch("https://api.airtable.com/v0/apphKFqKdClqcgF26/tblcknIFR9BQKOuYY/recOjsvwFIZIEzZMD", requestOptions)
   .then(response => response.text())
   .then(data =>  { 
   const parsed = JSON.parse(data)
