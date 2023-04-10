@@ -31,7 +31,7 @@ fetch("https://api.airtable.com/v0/apphKFqKdClqcgF26/tbl859m8WhwIV59tT", request
    document.querySelector('[maincome]').textContent = parsed.records[12].fields["Main allowances"]
    document.querySelector('[maincome21-22]').textContent = parsed.records[12].fields["2021/22"]
    document.querySelector('[maincome22-23]').textContent = parsed.records[12].fields["2022/23"]
-   document.querySelector('[maallowwed]').textContent = parsed.records[11].fields["Main allowances"]
+   document.querySelector('[madividendsavings]').textContent = parsed.records[11].fields["Main allowances"]
    document.querySelector('[madividend]').textContent = parsed.records[3].fields["Main allowances"]
    document.querySelector('[madividend21-22]').textContent = parsed.records[3].fields["2021/22"]
    document.querySelector('[madividend22-23]').textContent = parsed.records[3].fields["2022/23"]
