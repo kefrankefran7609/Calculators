@@ -35,7 +35,7 @@ fetch("https://api.airtable.com/v0/apphKFqKdClqcgF26/tblTomAWMw6SdkgWL", request
    document.querySelector('[seventh]').textContent = parsed.records[10].fields["CO2 emissions (g/km)"]
    document.querySelector('[seventhscale]').textContent = parsed.records[10].fields["Scale charge"]
    document.querySelector('[last]').textContent = parsed.records[7].fields["CO2 emissions (g/km)"]
-   document.querySelector('[lastscale]').textContent = parsed.records[7].fields["Scale charge"]
+   document.querySelector('[lastscale]').innerHTML = parsed.records[7].fields["Scale charge"]
    document.querySelector('[bottomnote]').innerHTML = parsed.records[1].fields.Notes
    document.querySelector('[topnote]').innerHTML = parsed.records[0].fields.Notes 
  })
