@@ -1,5 +1,3 @@
-<script>
-
 /* You can remove this Webflow function is your not using webflow to develop your project */
 window.Webflow ||= [];
 window.Webflow.push(() => {
@@ -49,5 +47,3 @@ fetch("https://api.airtable.com/v0/apphKFqKdClqcgF26/tblTomAWMw6SdkgWL", request
 /*****  End of Webflow push function *****/
 })
 
-
-</script>
