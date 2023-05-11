@@ -18,12 +18,64 @@ fetch("https://api.airtable.com/v0/apphKFqKdClqcgF26/tblNRouyD9neO2iqt", request
   .then(response => response.text())
   .then(data =>  { 
   const parsed = JSON.parse(data)
-  console.log(parsed)
-  /* Give the values to the elements on the page from our APi call */
- 
 
-  
-  
+  /* Give the values to the elements on the page from our APi call ** 
+   document.querySelector('[task]').textContent = parsed.records[26].fields.Task
+   document.querySelector('[period]').textContent = parsed.records[26].fields.Period  
+   document.querySelector('[deadline]').textContent = parsed.records[26].fields.Deadline
+   document.querySelector('[note]').textContent = parsed.records[26].fields.Note
+   document.querySelector('[task1]').textContent = parsed.records[36].fields.Task
+   document.querySelector('[period1]').textContent = parsed.records[36].fields.Period  
+   document.querySelector('[deadline1]').textContent = parsed.records[36].fields.Deadline
+   document.querySelector('[note1]').textContent = parsed.records[36].fields.Note
+   document.querySelector('[task2]').textContent = parsed.records[1].fields.Task
+   document.querySelector('[period2]').textContent = parsed.records[1].fields.Period  
+   document.querySelector('[deadline2]').textContent = parsed.records[1].fields.Deadline
+   document.querySelector('[note2]').textContent = parsed.records[1].fields.Note
+   document.querySelector('[task3]').textContent = parsed.records[34].fields.Task
+   document.querySelector('[period3]').textContent = parsed.records[34].fields.Period  
+   document.querySelector('[deadline3]').textContent = parsed.records[34].fields.Deadline
+   document.querySelector('[note3]').textContent = parsed.records[34].fields.Note
+   document.querySelector('[task4]').textContent = parsed.records[21].fields.Task
+   document.querySelector('[period4]').textContent = parsed.records[21].fields.Period  
+   document.querySelector('[deadline4]').textContent = parsed.records[21].fields.Deadline
+   document.querySelector('[note4]').textContent = parsed.records[21].fields.Note  
+   document.querySelector('[task5]').textContent = parsed.records[23].fields.Task
+   document.querySelector('[period5]').textContent = parsed.records[23].fields.Period  
+   document.querySelector('[deadline5]').textContent = parsed.records[23].fields.Deadline
+   document.querySelector('[note5]').textContent = parsed.records[23].fields.Note
+   document.querySelector('[task6]').textContent = parsed.records[25].fields.Task
+   document.querySelector('[period6]').textContent = parsed.records[25].fields.Period  
+   document.querySelector('[deadline6]').textContent = parsed.records[25].fields.Deadline
+   document.querySelector('[note6]').textContent = parsed.records[25].fields.Note  
+   document.querySelector('[task7]').textContent = parsed.records[11].fields.Task
+   document.querySelector('[period7]').textContent = parsed.records[11].fields.Period  
+   document.querySelector('[deadline7]').textContent = parsed.records[11].fields.Deadline
+   document.querySelector('[note7]').textContent = parsed.records[11].fields.Note
+   document.querySelector('[task8]').textContent = parsed.records[37].fields.Task
+   document.querySelector('[period8]').textContent = parsed.records[37].fields.Period  
+   document.querySelector('[deadline8]').textContent = parsed.records[37].fields.Deadline
+   document.querySelector('[note8]').textContent = parsed.records[37].fields.Note
+   document.querySelector('[task9]').textContent = parsed.records[31].fields.Task
+   document.querySelector('[period9]').textContent = parsed.records[31].fields.Period  
+   document.querySelector('[deadline9]').textContent = parsed.records[31].fields.Deadline
+   document.querySelector('[note9]').textContent = parsed.records[31].fields.Note
+   document.querySelector('[task10]').textContent = parsed.records[14].fields.Task
+   document.querySelector('[period10]').textContent = parsed.records[14].fields.Period  
+   document.querySelector('[deadline10]').textContent = parsed.records[14].fields.Deadline
+   document.querySelector('[note10]').textContent = parsed.records[14].fields.Note  
+   document.querySelector('[task11]').textContent = parsed.records[35].fields.Task
+   document.querySelector('[period11]').textContent = parsed.records[35].fields.Period  
+   document.querySelector('[deadline11]').textContent = parsed.records[35].fields.Deadline
+   document.querySelector('[note11]').textContent = parsed.records[35].fields.Note
+   document.querySelector('[task12]').textContent = parsed.records[28].fields.Task
+   document.querySelector('[period12]').textContent = parsed.records[28].fields.Period  
+   document.querySelector('[deadline12]').textContent = parsed.records[28].fields.Deadline
+   document.querySelector('[note12]').textContent = parsed.records[28].fields.Note
+   document.querySelector('[task13]').textContent = parsed.records[5].fields.Task
+   document.querySelector('[period13]').textContent = parsed.records[5].fields.Period  
+   document.querySelector('[deadline13]').textContent = parsed.records[5].fields.Deadline
+   document.querySelector('[note13]').textContent = parsed.records[5].fields.Note
    document.querySelector('[task14]').textContent = parsed.records[8].fields.Task
    document.querySelector('[period14]').textContent = parsed.records[8].fields.Period  
    document.querySelector('[deadline14]').textContent = parsed.records[8].fields.Deadline
