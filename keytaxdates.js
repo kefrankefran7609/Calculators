@@ -3,7 +3,7 @@
 window.Webflow ||= [];
 window.Webflow.push(() => {
 
-/*   API call to airtable to get main allowances table  */
+/*   API call to airtable to get Key Tax Dates - Employers */
 var myHeaders = new Headers();
 myHeaders.append("Authorization", "Bearer keyPbt2NnvY5saxet");
 myHeaders.append("Cookie", "brw=brwrmCv4hFJTjFb7C");
@@ -171,5 +171,62 @@ fetch("https://api.airtable.com/v0/apphKFqKdClqcgF26/tblNRouyD9neO2iqt", request
  })
   
   .catch(error => console.log('error', error))  
-/*****  End of Webflow push function *****/
+
+/*   API call to airtable to get Key Tax Dates - Individuals */
+fetch("https://api.airtable.com/v0/apphKFqKdClqcgF26/tblNRouyD9neO2iqt", requestOptions)
+  .then(response => response.text())
+  .then(data =>  { 
+  const parsed = JSON.parse(data)
+  console.log(parsed)
+   /* Give the values to the elements on the page from our APi call ** */
+   document.querySelector('[task]').textContent = parsed.records[26].fields.Task
+   document.querySelector('[taxyear]').textContent = parsed.records[26].fields["Tax Year"] 
+   document.querySelector('[deadline]').textContent = parsed.records[26].fields.Deadline
+   document.querySelector('[note]').textContent = parsed.records[26].fields.Note
+   document.querySelector('[task1]').textContent = parsed.records[36].fields.Task
+   document.querySelector('[taxyear1]').textContent = parsed.records[36].fields["Tax Year"] 
+   document.querySelector('[deadline1]').textContent = parsed.records[36].fields.Deadline
+   document.querySelector('[note1]').textContent = parsed.records[36].fields.Note
+   document.querySelector('[task2]').textContent = parsed.records[1].fields.Task
+   document.querySelector('[taxyear2]').textContent = parsed.records[1].fields["Tax Year"]  
+   document.querySelector('[deadline2]').textContent = parsed.records[1].fields.Deadline
+   document.querySelector('[note2]').textContent = parsed.records[1].fields.Note
+   document.querySelector('[task3]').textContent = parsed.records[34].fields.Task
+   document.querySelector('[taxyear3]').textContent = parsed.records[34].fields["Tax Year"]  
+   document.querySelector('[deadline3]').textContent = parsed.records[34].fields.Deadline
+   document.querySelector('[note3]').textContent = parsed.records[34].fields.Note
+   document.querySelector('[task4]').textContent = parsed.records[21].fields.Task
+   document.querySelector('[taxyear4]').textContent = parsed.records[21].fields["Tax Year"]  
+   document.querySelector('[deadline4]').textContent = parsed.records[21].fields.Deadline
+   document.querySelector('[note4]').textContent = parsed.records[21].fields.Note  
+   document.querySelector('[task5]').textContent = parsed.records[23].fields.Task
+   document.querySelector('[taxyear5]').textContent = parsed.records[23].fields["Tax Year"] 
+   document.querySelector('[deadline5]').textContent = parsed.records[23].fields.Deadline
+   document.querySelector('[note5]').textContent = parsed.records[23].fields.Note
+   document.querySelector('[task6]').textContent = parsed.records[25].fields.Task
+   document.querySelector('[taxyear6]').textContent = parsed.records[25].fields["Tax Year"]
+   document.querySelector('[deadline6]').textContent = parsed.records[25].fields.Deadline
+   document.querySelector('[note6]').textContent = parsed.records[25].fields.Note  
+   document.querySelector('[task7]').textContent = parsed.records[11].fields.Task
+   document.querySelector('[taxyear7]').textContent = parsed.records[11].fields["Tax Year"] 
+   document.querySelector('[deadline7]').textContent = parsed.records[11].fields.Deadline
+   document.querySelector('[note7]').textContent = parsed.records[11].fields.Note
+   document.querySelector('[task8]').textContent = parsed.records[37].fields.Task
+   document.querySelector('[taxyear8]').textContent = parsed.records[37].fields["Tax Year"]  
+   document.querySelector('[deadline8]').textContent = parsed.records[37].fields.Deadline
+   document.querySelector('[note8]').textContent = parsed.records[37].fields.Note
+   document.querySelector('[task9]').textContent = parsed.records[31].fields.Task
+   document.querySelector('[taxyear9]').textContent = parsed.records[31].fields["Tax Year"]  
+   document.querySelector('[deadline9]').textContent = parsed.records[31].fields.Deadline
+   document.querySelector('[note9]').textContent = parsed.records[31].fields.Note
+   document.querySelector('[task10]').textContent = parsed.records[14].fields.Task
+   document.querySelector('[taxyear10]').textContent = parsed.records[14].fields["Tax Year"]  
+   document.querySelector('[deadline10]').textContent = parsed.records[14].fields.Deadline
+   document.querySelector('[note10]').textContent = parsed.records[14].fields.Note  
+ })
+  
+  .catch(error => console.log('error', error)) 
+  
+  
+  /*****  End of Webflow push function *****/
 })
