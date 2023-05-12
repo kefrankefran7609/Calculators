@@ -178,7 +178,7 @@ fetch("https://api.airtable.com/v0/apphKFqKdClqcgF26/tblNRouyD9neO2iqt", request
   .then(data =>  { 
   const parsed = JSON.parse(data)
   console.log(parsed)
-   /* Give the values to the elements on the page from our APi call ** */
+   /* Give the values to the elements on the page from our APi call ** 
    document.querySelector('[task]').textContent = parsed.records[26].fields.Task
    document.querySelector('[taxyear]').textContent = parsed.records[26].fields["Tax Year"] 
    document.querySelector('[deadline]').textContent = parsed.records[26].fields.Deadline
@@ -222,7 +222,7 @@ fetch("https://api.airtable.com/v0/apphKFqKdClqcgF26/tblNRouyD9neO2iqt", request
    document.querySelector('[task10]').textContent = parsed.records[14].fields.Task
    document.querySelector('[taxyear10]').textContent = parsed.records[14].fields["Tax Year"]  
    document.querySelector('[deadline10]').textContent = parsed.records[14].fields.Deadline
-   document.querySelector('[note10]').textContent = parsed.records[14].fields.Note  
+   document.querySelector('[note10]').textContent = parsed.records[14].fields.Note  */
  })
   
   .catch(error => console.log('error', error)) 
