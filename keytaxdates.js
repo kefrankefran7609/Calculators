@@ -231,7 +231,7 @@ fetch("https://api.airtable.com/v0/apphKFqKdClqcgF26/tblF4c9mWtwq2Bfwq", request
   .then(response => response.text())
   .then(data =>  { 
   const parsed = JSON.parse(data)
-  console.log(parsed)
+  
    /* Give the values to the elements on the page from our APi call  */
    document.querySelector('[acc]').textContent = parsed.records[2].fields["Accounting period end"]
    document.querySelector('[corp]').textContent = parsed.records[2].fields["Corporation tax payment date"] 
@@ -272,7 +272,7 @@ fetch("https://api.airtable.com/v0/apphKFqKdClqcgF26/tblF4c9mWtwq2Bfwq", request
    document.querySelector('[acc12]').textContent = parsed.records[0].fields["Accounting period end"]
    document.querySelector('[corp12]').textContent = parsed.records[0].fields["Corporation tax payment date"] 
    document.querySelector('[ct60112]').textContent = parsed.records[0].fields["CT600 filling date"]
-   document.querySelector('[acc13]').textContent = parsed.records[13].fields["Accounting period end"] /*
+   document.querySelector('[acc13]').innerHTML = parsed.records[13].fields["Accounting period end"] /*
    document.querySelector('[corp13]').textContent = parsed.records[13].fields["Corporation tax payment date"] 
    document.querySelector('[ct60113]').textContent = parsed.records[13].fields["CT600 filling date"] */
    document.querySelector('[acc14]').textContent = parsed.records[8].fields["Accounting period end"]
@@ -281,10 +281,21 @@ fetch("https://api.airtable.com/v0/apphKFqKdClqcgF26/tblF4c9mWtwq2Bfwq", request
    document.querySelector('[acc15]').textContent = parsed.records[15].fields["Accounting period end"]
    document.querySelector('[corp15]').textContent = parsed.records[15].fields["Corporation tax payment date"] 
    document.querySelector('[ct60115]').textContent = parsed.records[15].fields["CT600 filling date"] 
- })
-  
+ })  
   .catch(error => console.log('error', error)) 
   
+  /*   API call to airtable to get Key Tax Dates - Corporation tax CT61 */
+fetch("https://api.airtable.com/v0/apphKFqKdClqcgF26/tblUwXubapCi1H7Fe", requestOptions)
+  .then(response => response.text())
+  .then(data =>  { 
+  const parsed = JSON.parse(data)
+  console.log(parsed)
+   /* Give the values to the elements on the page from our APi call  */
+   document.querySelector('[acc]').textContent = parsed.records[2].fields["Reporting period"]
+   document.querySelector('[corp]').textContent = parsed.records[2].fields["CT61 and payment deadline"] 
+  
+ })  
+  .catch(error => console.log('error', error)) 
   
   /*****  End of Webflow push function *****/
 })
