@@ -291,9 +291,24 @@ fetch("https://api.airtable.com/v0/apphKFqKdClqcgF26/tblUwXubapCi1H7Fe", request
   const parsed = JSON.parse(data)
   console.log(parsed)
    /* Give the values to the elements on the page from our APi call  */
-   document.querySelector('[acc]').textContent = parsed.records[2].fields["Reporting period"]
-   document.querySelector('[corp]').textContent = parsed.records[2].fields["CT61 and payment deadline"] 
-  
+   document.querySelector('[rep]').textContent = parsed.records[3].fields["Reporting period"]
+   document.querySelector('[ct61]').textContent = parsed.records[3].fields["CT61 and payment deadline"]
+  document.querySelector('[rep1]').textContent = parsed.records[1].fields["Reporting period"]
+   document.querySelector('[ct611]').textContent = parsed.records[1].fields["CT61 and payment deadline"] 
+  document.querySelector('[rep2]').textContent = parsed.records[8].fields["Reporting period"]
+   document.querySelector('[ct612]').textContent = parsed.records[8].fields["CT61 and payment deadline"] 
+  document.querySelector('[rep3]').textContent = parsed.records[6].fields["Reporting period"]
+   document.querySelector('[ct613]').textContent = parsed.records[6].fields["CT61 and payment deadline"] 
+  document.querySelector('[rep4]').textContent = parsed.records[0].fields["Reporting period"]
+   document.querySelector('[ct614]').textContent = parsed.records[0].fields["CT61 and payment deadline"] 
+  document.querySelector('[rep5]').textContent = parsed.records[7].fields["Reporting period"]
+   document.querySelector('[ct615]').textContent = parsed.records[7].fields["CT61 and payment deadline"] 
+  document.querySelector('[rep6]').textContent = parsed.records[5].fields["Reporting period"]
+   document.querySelector('[ct616]').textContent = parsed.records[5].fields["CT61 and payment deadline"] 
+  document.querySelector('[rep7]').textContent = parsed.records[4].fields["Reporting period"]
+   document.querySelector('[ct617]').textContent = parsed.records[4].fields["CT61 and payment deadline"] 
+  document.querySelector('[rep8]').textContent = parsed.records[2].fields["Reporting period"]
+   document.querySelector('[ct618]').textContent = parsed.records[2].fields["CT61 and payment deadline"]   
  })  
   .catch(error => console.log('error', error)) 
   
