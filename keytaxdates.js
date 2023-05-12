@@ -177,7 +177,6 @@ fetch("https://api.airtable.com/v0/apphKFqKdClqcgF26/tblHwOsBKACCHgHVY", request
   .then(response => response.text())
   .then(data =>  { 
   const parsed = JSON.parse(data)
-  console.log(parsed)
    /* Give the values to the elements on the page from our APi call  */
    document.querySelector('[task0]').textContent = parsed.records[3].fields.Task
    document.querySelector('[taxyear]').textContent = parsed.records[3].fields["Tax Year"] 
@@ -222,6 +221,68 @@ fetch("https://api.airtable.com/v0/apphKFqKdClqcgF26/tblHwOsBKACCHgHVY", request
    document.querySelector('[task010]').textContent = parsed.records[6].fields.Task
    document.querySelector('[taxyear10]').textContent = parsed.records[6].fields["Tax Year"]  
    document.querySelector('[deadline010]').textContent = parsed.records[6].fields.Deadline
+   document.querySelector('[note010]').textContent = parsed.records[6].fields.Note  
+ })
+  
+  .catch(error => console.log('error', error)) 
+  
+  /*   API call to airtable to get Key Tax Dates - Corporation tax CT600 */
+fetch("https://api.airtable.com/v0/apphKFqKdClqcgF26/tblF4c9mWtwq2Bfwq", requestOptions)
+  .then(response => response.text())
+  .then(data =>  { 
+  const parsed = JSON.parse(data)
+  console.log(parsed)
+   /* Give the values to the elements on the page from our APi call  */
+   document.querySelector('[acc]').textContent = parsed.records[3].fields["Accounting period end"]
+   document.querySelector('[corp]').textContent = parsed.records[3].fields["Corporation tax payment date"] 
+   document.querySelector('[ct601]').textContent = parsed.records[3].fields["CT600 filling date"]
+   document.querySelector('[acc1]').textContent = parsed.records[3].fields["Accounting period end"]
+   document.querySelector('[corp1]').textContent = parsed.records[3].fields["Corporation tax payment date"] 
+   document.querySelector('[ct6011]').textContent = parsed.records[3].fields["CT600 filling date"]
+   document.querySelector('[acc2]').textContent = parsed.records[3].fields["Accounting period end"]
+   document.querySelector('[corp2]').textContent = parsed.records[3].fields["Corporation tax payment date"] 
+   document.querySelector('[ct6012]').textContent = parsed.records[3].fields["CT600 filling date"]
+   document.querySelector('[acc3]').textContent = parsed.records[3].fields["Accounting period end"]
+   document.querySelector('[corp3]').textContent = parsed.records[3].fields["Corporation tax payment date"] 
+   document.querySelector('[ct6013]').textContent = parsed.records[3].fields["CT600 filling date"]
+   document.querySelector('[acc4]').textContent = parsed.records[3].fields["Accounting period end"]
+   document.querySelector('[corp4]').textContent = parsed.records[3].fields["Corporation tax payment date"] 
+   document.querySelector('[ct6014]').textContent = parsed.records[3].fields["CT600 filling date"]
+   document.querySelector('[acc5]').textContent = parsed.records[3].fields["Accounting period end"]
+   document.querySelector('[corp5]').textContent = parsed.records[3].fields["Corporation tax payment date"] 
+   document.querySelector('[ct6015]').textContent = parsed.records[3].fields["CT600 filling date"]
+   document.querySelector('[acc6]').textContent = parsed.records[3].fields["Accounting period end"]
+   document.querySelector('[corp6]').textContent = parsed.records[3].fields["Corporation tax payment date"] 
+   document.querySelector('[ct6016]').textContent = parsed.records[3].fields["CT600 filling date"]
+   document.querySelector('[acc7]').textContent = parsed.records[3].fields["Accounting period end"]
+   document.querySelector('[corp7]').textContent = parsed.records[3].fields["Corporation tax payment date"] 
+   document.querySelector('[ct6017]').textContent = parsed.records[3].fields["CT600 filling date"]
+   document.querySelector('[acc8]').textContent = parsed.records[3].fields["Accounting period end"]
+   document.querySelector('[corp8]').textContent = parsed.records[3].fields["Corporation tax payment date"] 
+   document.querySelector('[ct6018]').textContent = parsed.records[3].fields["CT600 filling date"]
+   document.querySelector('[acc9]').textContent = parsed.records[3].fields["Accounting period end"]
+   document.querySelector('[corp9]').textContent = parsed.records[3].fields["Corporation tax payment date"] 
+   document.querySelector('[ct6019]').textContent = parsed.records[3].fields["CT600 filling date"]
+   document.querySelector('[acc10]').textContent = parsed.records[3].fields["Accounting period end"]
+   document.querySelector('[corp10]').textContent = parsed.records[3].fields["Corporation tax payment date"] 
+   document.querySelector('[ct60110]').textContent = parsed.records[3].fields["CT600 filling date"]
+   document.querySelector('[acc11]').textContent = parsed.records[3].fields["Accounting period end"]
+   document.querySelector('[corp11]').textContent = parsed.records[3].fields["Corporation tax payment date"] 
+   document.querySelector('[ct60111]').textContent = parsed.records[3].fields["CT600 filling date"]
+   document.querySelector('[acc12]').textContent = parsed.records[3].fields["Accounting period end"]
+   document.querySelector('[corp12]').textContent = parsed.records[3].fields["Corporation tax payment date"] 
+   document.querySelector('[ct60112]').textContent = parsed.records[3].fields["CT600 filling date"]
+   document.querySelector('[acc13]').textContent = parsed.records[3].fields["Accounting period end"]
+   document.querySelector('[corp13]').textContent = parsed.records[3].fields["Corporation tax payment date"] 
+   document.querySelector('[ct60113]').textContent = parsed.records[3].fields["CT600 filling date"]
+   document.querySelector('[acc14]').textContent = parsed.records[3].fields["Accounting period end"]
+   document.querySelector('[corp14]').textContent = parsed.records[3].fields["Corporation tax payment date"] 
+   document.querySelector('[ct60114]').textContent = parsed.records[3].fields["CT600 filling date"]
+   document.querySelector('[acc15]').textContent = parsed.records[3].fields["Accounting period end"]
+   document.querySelector('[corp15]').textContent = parsed.records[3].fields["Corporation tax payment date"] 
+   document.querySelector('[ct60115]').textContent = parsed.records[3].fields["CT600 filling date"]
+  
+  
    document.querySelector('[note010]').textContent = parsed.records[6].fields.Note  
  })
   
