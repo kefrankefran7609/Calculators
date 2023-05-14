@@ -346,7 +346,7 @@ fetch("https://api.airtable.com/v0/apphKFqKdClqcgF26/tblbumPQskHIpQx3k", request
    document.querySelector('[ret11]').textContent = parsed.records[0].fields["Return and payment deadline"]
   document.querySelector('[vat12]').textContent = parsed.records[11].fields["Quarterly/monthlyVAT return period end"]
    document.querySelector('[ret12]').textContent = parsed.records[11].fields["Return and payment deadline"]
-  document.querySelector('[vatnote]').textContent = parsed.records[9].fields["Quarterly/monthlyVAT return period end"]
+  document.querySelector('[vatnote]').innerHTML = parsed.records[9].fields["Quarterly/monthlyVAT return period end"]
   document.querySelector('[vat14]').textContent = parsed.records[2].fields["Quarterly/monthlyVAT return period end"]
    document.querySelector('[ret14]').textContent = parsed.records[2].fields["Return and payment deadline"]
   document.querySelector('[vat15]').textContent = parsed.records[7].fields["Quarterly/monthlyVAT return period end"]
