@@ -1,5 +1,5 @@
 var content = `
-<img id="1" src="https://cumbriafhs.com/cumbria/images/PARISH_MAP.png" name="parishes" alt="responsive image map of parishes" usemap="#parishes" style="border-style:none;">
+<img id="1" src="https://cumbriafhs.com/cumbria/images/PARISH_MAP.png" name="parishes" alt="responsive image map of parishes" usemap="#parishes" style="border-style:none; display: block; max-width: 100%; height: auto;">
 <map id="parishes" name="parishes">
 <area shape="poly" alt="Kirkby Stephen" coords="1331,1204,1264,1209,1245,1218,1244,1229,1233,1237,1228,1251,1242,1310,1181,1345,1167,1336,1176,1284,1160,1271,1167,1231,1158,1228,1147,1224,1138,1217,1126,1208,1125,1195,1126,1182,1147,1147,1126,1138,1105,1131,1104,1119,1121,1115,1174,1121,1191,1115,1205,1122,1223,1118,1241,1121,1262,1124,1272,1141,1287,1156,1353,1178" href="https://google.ca" title="Kirkby Stephen">
 <area shape="poly" alt="Crosby Garrett" coords="1120,1182,1118,1185,1118,1190,1115,1193,1114,1197,1110,1199,1105,1198,1101,1192,1099,1193,1097,1192,1095,1192,1092,1192,1089,1192,1084,1192,1078,1190,1066,1190,1054,1183,1056,1177,1069,1175,1085,1175,1090,1173,1092,1172,1092,1164,1094,1155,1099,1144,1102,1135,1113,1136,1126,1141,1144,1148,1134,1163,1125,1175,1123,1179" href="https://google.com" title="Crosby Garrett">
