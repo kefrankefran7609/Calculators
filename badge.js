@@ -538,12 +538,12 @@ var contentTablet = `
 
 if($(window).width() > 1460) {
 document.querySelector('[map]').innerHTML = contentDesktopLarge
-})
+}
 
 if($(window).width() > 991) {
 document.querySelector('[map]').innerHTML = contentSmallDesktop
-})
+}
 
 if($(window).width() > 480) {
 document.querySelector('[map]').innerHTML = contentTablet
-})
+}
