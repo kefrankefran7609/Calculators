@@ -536,14 +536,14 @@ var contentTablet = `
 <area shape="default" nohref="nohref" alt="" coords="0">
 </map>`
 
-if($(window).width() > 1460) {
+if($(window).width() >= 1461) {
 document.querySelector('[map]').innerHTML = contentDesktopLarge
 }
 
-if($(window).width() > 991) {
+if($(window).width() < 1461) {
 document.querySelector('[map]').innerHTML = contentSmallDesktop
 }
 
-if($(window).width() > 480) {
+if($(window).width() < 991) {
 document.querySelector('[map]').innerHTML = contentTablet
 }
