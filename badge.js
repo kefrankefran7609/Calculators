@@ -914,3 +914,25 @@ document.querySelector('[map]').innerHTML = contentLargePhone
 if($(window).width() < 361) {
 document.querySelector('[map]').innerHTML = contentSmallPhone
 }
+
+window.addEventListener('resize', () => {
+if($(window).width() >= 1461) {
+document.querySelector('[map]').innerHTML = contentDesktopLarge
+}
+
+if($(window).width() < 1461) {
+document.querySelector('[map]').innerHTML = contentSmallDesktop
+}
+
+if($(window).width() < 991) {
+document.querySelector('[map]').innerHTML = contentTablet
+}
+
+if($(window).width() < 768) {
+document.querySelector('[map]').innerHTML = contentLargePhone
+}
+
+if($(window).width() < 361) {
+document.querySelector('[map]').innerHTML = contentSmallPhone
+}
+})
