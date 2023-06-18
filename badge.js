@@ -907,7 +907,7 @@ if($(window).width() < 991) {
 document.querySelector('[map]').innerHTML = contentTablet
 }
 
-if($(window).width() < 481) {
+if($(window).width() < 768) {
 document.querySelector('[map]').innerHTML = contentLargePhone
 }
 
