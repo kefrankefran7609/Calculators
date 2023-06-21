@@ -914,7 +914,7 @@ if($(window).width() < 768) {
 document.querySelector('[map]').innerHTML = contentLargePhone
 }
 
-if($(window).width() < 361) {
+if($(window).width() < 410) {
 document.querySelector('[map]').innerHTML = contentSmallPhone
 }
 
@@ -935,7 +935,7 @@ if($(window).width() < 768) {
 document.querySelector('[map]').innerHTML = contentLargePhone
 }
 
-if($(window).width() < 361) {
+if($(window).width() < 410) {
 document.querySelector('[map]').innerHTML = contentSmallPhone
 }
 })
