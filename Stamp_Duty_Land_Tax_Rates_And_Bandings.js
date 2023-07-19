@@ -2,6 +2,8 @@
 window.Webflow ||= [];
 window.Webflow.push(() => {
 
+console.log("parsed")
+  
 /*   API call to airtable to get main allowances table  */
 var myHeaders = new Headers();
 myHeaders.append("Authorization", "Bearer keyPbt2NnvY5saxet");
