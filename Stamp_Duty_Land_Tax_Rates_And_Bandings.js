@@ -2,8 +2,6 @@
 /* You can remove this Webflow function is your not using webflow to develop your project */
 window.Webflow ||= [];
 window.Webflow.push(() => {
-
-console.log("parsed")
   
 /*   API call to airtable to get main allowances table  */
 var myHeaders = new Headers();
@@ -20,7 +18,6 @@ fetch("https://api.airtable.com/v0/apphKFqKdClqcgF26/tblIt28vfTJiKpCe1", request
   .then(response => response.text())
   .then(data =>  { 
   const parsed = JSON.parse(data)
-  console.log(parsed)
   /* Give the values to the elements on the page from our API call */
    document.querySelectorAll('[pageheading]').forEach(el => el.textContent = parsed.records[24].fields.Name) 
    document.querySelector('[location1]').textContent = parsed.records[35].fields.Name  
