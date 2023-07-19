@@ -21,7 +21,7 @@ fetch("https://api.airtable.com/v0/apphKFqKdClqcgF26/tblIt28vfTJiKpCe1", request
   const parsed = JSON.parse(data)
   console.log(parsed)
   /* Give the values to the elements on the page from our API call */
-   document.querySelector('[pageheading]').textContent = parsed.records[24].fields.Name 
+   document.querySelectorAll('[pageheading]').forEach(el => el.textContent = parsed.records[24].fields.Name) 
    document.querySelector('[location1]').textContent = parsed.records[35].fields.Name  
    document.querySelector('[topnote]').innerHTML = parsed.records[20].fields.Notes 
    document.querySelectorAll('[title]').forEach(el => el.textContent = parsed.records[23].fields.Name)
