@@ -55,14 +55,14 @@ fetch("https://api.airtable.com/v0/apphKFqKdClqcgF26/tblIt28vfTJiKpCe1", request
    document.querySelector('[walesaddfirstrate1]').textContent = parsed.records[34].fields["1st row"]
    document.querySelector('[walesaddsecond]').textContent = parsed.records[25].fields.Name
    document.querySelector('[walesaddsecondrate1]').textContent = parsed.records[25].fields["1st row"]
-   document.querySelector('[walesaddthird]').textContent = parsed.records[32].fields.Name
-   document.querySelector('[walesaddthird1]').textContent = parsed.records[32].fields["1st row"]
-   document.querySelector('[walesaddfourth]').textContent = parsed.records[30].fields.Name
-   document.querySelector('[walesaddfourth1]').textContent = parsed.records[30].fields["1st row"]
-   document.querySelector('[walesaddfifth]').textContent = parsed.records[16].fields.Name
-   document.querySelector('[walesaddfifth1]').textContent = parsed.records[16].fields["1st row"]
-   document.querySelector('[walesaddsixth]').textContent = parsed.records[16].fields.Name
-   document.querySelector('[walesaddsixth1]').textContent = parsed.records[16].fields["1st row"]
+   document.querySelector('[walesaddthird]').textContent = parsed.records[15].fields.Name
+   document.querySelector('[walesaddthird1]').textContent = parsed.records[15].fields["1st row"]
+   document.querySelector('[walesaddfourth]').textContent = parsed.records[27].fields.Name
+   document.querySelector('[walesaddfourth1]').textContent = parsed.records[27].fields["1st row"]
+   document.querySelector('[walesaddfifth]').textContent = parsed.records[21].fields.Name
+   document.querySelector('[walesaddfifth1]').textContent = parsed.records[21].fields["1st row"]
+   document.querySelector('[walesaddsixth]').textContent = parsed.records[10].fields.Name
+   document.querySelector('[walesaddsixth1]').textContent = parsed.records[10].fields["1st row"]
   })
   .catch(error => console.log('error', error))  
 /*****  End of Webflow push function *****/
