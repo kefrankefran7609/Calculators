@@ -24,8 +24,8 @@ fetch("https://api.airtable.com/v0/apphKFqKdClqcgF26/tblIt28vfTJiKpCe1", request
    document.querySelector('[pageheading]').textContent = parsed.records[24].fields.Name 
    document.querySelector('[location1]').textContent = parsed.records[35].fields.Name  
    document.querySelector('[topnote]').innerHTML = parsed.records[20].fields.Notes 
-   document.querySelectorAll('[title]')forEach(el => el.textContent = parsed.records[23].fields.Name)
-   document.querySelectorAll('[title1]')forEach(el => el.textContent = parsed.records[23].fields["1st row"])
+   document.querySelectorAll('[title]').forEach(el => el.textContent = parsed.records[23].fields.Name)
+   document.querySelectorAll('[title1]').forEach(el => el.textContent = parsed.records[23].fields["1st row"])
    document.querySelector('[title2]').textContent = parsed.records[23].fields["2nd row"]   
    document.querySelector('[first]').textContent = parsed.records[9].fields.Name
    document.querySelector('[firstrate1]').textContent = parsed.records[9].fields["1st row"]
