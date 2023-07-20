@@ -17,7 +17,8 @@ fetch("https://api.airtable.com/v0/apphKFqKdClqcgF26/tblKnSGmzoxSyFC3Y", request
   .then(response => response.text())
   .then(data =>  { 
   const parsed = JSON.parse(data)
-  /* Give the values to the elements on the page from our APi call */
+  /* Give the values to the elements on the page from our API call */
+   document.querySelectorAll('[pageheading]').forEach(el => el.textContent = parsed.records[5].fields["Property value"]
    document.querySelector('[title]').textContent = parsed.records[2].fields["Property value"]
    document.querySelector('[yearfrom]').textContent = parsed.records[2].fields["Year from"]
    document.querySelector('[yearto]').textContent = parsed.records[2].fields["Year to"]   
