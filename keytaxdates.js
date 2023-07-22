@@ -369,4 +369,4 @@ if(allChildrenEmpty){
 	el.classList.add('hide')
 }
 })
-}, 500)
+}, 1000)
