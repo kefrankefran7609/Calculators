@@ -355,3 +355,18 @@ fetch("https://api.airtable.com/v0/apphKFqKdClqcgF26/tblbumPQskHIpQx3k", request
   .catch(error => console.log('error', error)) 
   /*****  End of Webflow push function *****/
 })
+
+/***** Hiding empty rows *****/
+setTimeout(() => {
+document.querySelectorAll('.deadlines_item-row').forEach((el) => {
+var children = el.children
+function isNodeEmpty(node) {
+  return !node.textContent.trim(); 	
+}
+// Check if all children are empty
+const allChildrenEmpty = Array.from(children).every(isNodeEmpty);
+if(allChildrenEmpty){
+	el.classList.add('hide')
+}
+})
+}, 500)
