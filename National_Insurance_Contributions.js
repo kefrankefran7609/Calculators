@@ -71,7 +71,7 @@ fetch("https://api.airtable.com/v0/apphKFqKdClqcgF26/tblUJeRe8ao2unR2m", request
   .catch(error => console.log('error', error))  
 /*****  End of Webflow push function *****/
 
-
+setTimeout(() => {
 document.querySelectorAll('.tax-data_table-row').forEach((el) => {
 var children = el.children
 function isNodeEmpty(node) {
@@ -85,7 +85,6 @@ if(allChildrenEmpty){
 console.log(allChildrenEmpty)
 })
 
-
 const rows = document.querySelectorAll('.tax-data_table-row:not(.hide):not(.is--first-row)').forEach((element, index) => {
     if (index % 2 === 0) {
       element.style.background = "#FFFFFF"
@@ -93,5 +92,5 @@ const rows = document.querySelectorAll('.tax-data_table-row:not(.hide):not(.is--
       element.style.background = "rgba(110, 200, 87, .2)"
     }
   });
-
+}, 1000)
 })
