@@ -103,7 +103,6 @@ const rows = document.querySelectorAll('.tax-data_table-row:not(.hide):not(.is--
     }
   });
 }, 1000)
+	
 })
 
-/*****  End of Webflow push function *****/
-})
