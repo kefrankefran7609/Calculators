@@ -69,8 +69,8 @@ fetch("https://api.airtable.com/v0/apphKFqKdClqcgF26/tblUJeRe8ao2unR2m", request
    
   })
   .catch(error => console.log('error', error))  
-/*****  End of Webflow push function *****/
 
+/***** Hiding rows that don't receive content from Airtbale *****/
 setTimeout(() => {
 document.querySelectorAll('.tax-data_table-row').forEach((el) => {
 var children = el.children
@@ -94,3 +94,4 @@ const rows = document.querySelectorAll('.tax-data_table-row:not(.hide):not(.is--
   });
 }, 1000)
 })
+/*****  End of Webflow push function *****/
