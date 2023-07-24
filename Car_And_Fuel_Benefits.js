@@ -41,6 +41,7 @@ fetch("https://api.airtable.com/v0/apphKFqKdClqcgF26/tblTomAWMw6SdkgWL", request
    document.querySelector('[lastscale]').innerHTML = parsed.records[8].fields["Scale charge"]
    document.querySelector('[bottomnote]').innerHTML = parsed.records[2].fields.Notes
    document.querySelector('[topnote]').innerHTML = parsed.records[0].fields.Notes 
+   document.querySelectorAll('[pageheading]').forEach(el => el.textContent = parsed.records[0].fields["CO2 emissions (g/km)"]
  })
   
   .catch(error => console.log('error', error))  
