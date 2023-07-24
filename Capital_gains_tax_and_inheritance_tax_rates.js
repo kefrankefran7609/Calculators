@@ -60,7 +60,7 @@ fetch("https://api.airtable.com/v0/apphKFqKdClqcgF26/tblbnpfB7JMoUVgPg", request
    document.querySelector('[basic21-22]').textContent = parsed.records[14].fields["Year from"]
    document.querySelector('[basic22-23]').textContent = parsed.records[14].fields["Year to"] 
    document.querySelector('[note]').innerHTML = parsed.records[1].fields.Notes
-   document.querySelector('[middlenote]').innerHTML = parsed.records[1].fields["Year from"]
+   document.querySelector('[middlenote]').innerHTML = parsed.records[7].fields.Notes
   })
   .catch(error => console.log('error', error))  
 
