@@ -40,7 +40,7 @@ fetch("https://api.airtable.com/v0/apphKFqKdClqcgF26/tblUJeRe8ao2unR2m", request
    document.querySelector('[vary]').textContent = parsed.records[10].fields["Class 2 (Self employed)"]
    document.querySelector('[class4]').textContent = parsed.records[1].fields["Class 2 (Self employed)"]
    document.querySelector('[profit2]').textContent = parsed.records[4].fields["Class 2 (Self employed)"]
-   document.querySelector('[pageheading]').textContent = parsed.records[6].fields["Class 1 (Employees)"]
+   document.querySelectorAll('[pageheading]').forEach(el => el.textContent = parsed.records[24].fields["Class 1 (Employees)"])
    document.querySelector('[profit3]').textContent = parsed.records[6].fields["Class 2 (Self employed)"]
    document.querySelector('[profit321-22]').textContent = parsed.records[6].fields["Year from"]
    document.querySelector('[profit322-23]').textContent = parsed.records[6].fields["Year to"]
