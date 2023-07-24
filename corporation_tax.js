@@ -19,7 +19,7 @@ fetch("https://api.airtable.com/v0/apphKFqKdClqcgF26/tblt7D4MfSbOEKyFF", request
    const parsed = JSON.parse(data)
   /* Give the values to the elements on the page from our APi call */
    console.log(parsed)
-   document.querySelectorAll('[pageheading]').forEach(el => el.textContent = parsed.records[24].fields.Name
+   document.querySelectorAll('[pageheading]').forEach(el => el.textContent = parsed.records[24].fields.Name)
    document.querySelector('[ct1]').textContent = parsed.records[11].fields.Name
    document.querySelector('[yearfrom]').textContent = parsed.records[11].fields["Year from"]
    document.querySelector('[yearto]').textContent = parsed.records[11].fields["Year to"]
