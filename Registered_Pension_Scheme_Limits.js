@@ -17,9 +17,9 @@ var requestOptions = {
 fetch("https://api.airtable.com/v0/apphKFqKdClqcgF26/tble7rzATUidKph2b", requestOptions)
   .then(response => response.text())
   .then(data =>  { 
-  const parsed = JSON.parse(data)
   /* Give the values to the elements on the page from our APi call */
-  document.querySelector('[yearfrom]').textContent = parsed.records[1].fields["Year from"]
+   document.querySelectorAll('[pageheading]').forEach(el => el.textContent = parsed.records[1].fields.Name
+   document.querySelector('[yearfrom]').textContent = parsed.records[1].fields["Year from"]
    document.querySelector('[yearto]').textContent = parsed.records[1].fields["Year to"]
    document.querySelector('[la]').textContent = parsed.records[2].fields.Name
    document.querySelector('[la21-22]').textContent = parsed.records[2].fields["Year from"]
@@ -51,7 +51,6 @@ const allChildrenEmpty = Array.from(children).every(isNodeEmpty);
 if(allChildrenEmpty){
 	el.classList.add('hide')
 }
-console.log(allChildrenEmpty)
 })
 
 const rows = document.querySelectorAll('.tax-data_table-row:not(.hide):not(.is--first-row)').forEach((element, index) => {
