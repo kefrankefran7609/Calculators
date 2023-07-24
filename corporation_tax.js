@@ -13,46 +13,46 @@ var requestOptions = {
   redirect: 'follow'
 };
 
-fetch("https://api.airtable.com/v0/apphKFqKdClqcgF26/tbl859m8WhwIV59tT", requestOptions)
+fetch("https://api.airtable.com/v0/apphKFqKdClqcgF26/tblt7D4MfSbOEKyFF", requestOptions)
   .then(response => response.text())
   .then(data =>  { 
    const parsed = JSON.parse(data)
   /* Give the values to the elements on the page from our APi call */
    console.log(parsed)
-   document.querySelectorAll('[pageheading]').forEach(el => el.textContent = parsed.records[24].fields["Main allowances"])
-   document.querySelector('[ma]').textContent = parsed.records[11].fields["Main allowances"]
-   document.querySelector('[mato]').textContent = parsed.records[11].fields["Year from"]
-   document.querySelector('[mafrom]').textContent = parsed.records[11].fields["Year to"]
-   document.querySelector('[mapersonal]').textContent = parsed.records[0].fields["Main allowances"]
-   document.querySelector('[mapersonal21-22]').textContent = parsed.records[0].fields["Year from"]
-   document.querySelector('[mapersonal22-23]').textContent = parsed.records[0].fields["Year to"]
-   document.querySelector('[mablind]').textContent = parsed.records[8].fields["Main allowances"]
-   document.querySelector('[mablind21-22]').textContent = parsed.records[8].fields["Year from"]
-   document.querySelector('[mablind22-23]').textContent = parsed.records[8].fields["Year to"]
-   document.querySelector('[maallowwed]').textContent = parsed.records[1].fields["Main allowances"]
-   document.querySelector('[mamarried]').textContent = parsed.records[2].fields["Main allowances"]
-   document.querySelector('[mamarried21-22]').textContent = parsed.records[2].fields["Year from"]
-   document.querySelector('[mamarried22-23]').textContent = parsed.records[2].fields["Year to"]
-   document.querySelector('[maincome]').textContent = parsed.records[13].fields["Main allowances"]
-   document.querySelector('[maincome21-22]').textContent = parsed.records[13].fields["Year from"]
-   document.querySelector('[maincome22-23]').textContent = parsed.records[13].fields["Year to"]
-   document.querySelector('[madividendsavings]').textContent = parsed.records[12].fields["Main allowances"]
-   document.querySelector('[madividend]').textContent = parsed.records[3].fields["Main allowances"]
-   document.querySelector('[madividend21-22]').textContent = parsed.records[3].fields["Year from"]
-   document.querySelector('[madividend22-23]').textContent = parsed.records[3].fields["Year to"]
-   document.querySelector('[masavingshigher]').textContent = parsed.records[14].fields["Main allowances"]
-   document.querySelector('[masavingshigher21-22]').textContent = parsed.records[14].fields["Year from"]
-   document.querySelector('[masavingshigher22-23]').textContent = parsed.records[14].fields["Year to"]
-   document.querySelector('[masavingsbasic]').textContent = parsed.records[9].fields["Main allowances"]
-   document.querySelector('[masavingsbasic21-22]').textContent = parsed.records[9].fields["Year from"]
-   document.querySelector('[masavingsbasic22-23]').textContent = parsed.records[9].fields["Year to"]
-   document.querySelector('[rate1title]').textContent = parsed.records[11].fields["Rate bands"]
-   document.querySelector('[rate1titleto]').textContent = parsed.records[11].fields["Year from"]
-   document.querySelector('[rate1titlefrom]').textContent = parsed.records[11].fields["Year to"]
-   document.querySelector('[rate2title]').textContent = parsed.records[11].fields["Rate bands"]
-   document.querySelector('[rate2titleg]').textContent = parsed.records[11].fields["General income"]
-   document.querySelector('[rate2titles]').textContent = parsed.records[11].fields["Savings income"]  
-   document.querySelector('[rate2titled]').textContent = parsed.records[11].fields["Dividend income"]  
+   document.querySelectorAll('[pageheading]').forEach(el => el.textContent = parsed.records[24].fields.Name
+   document.querySelector('[ct1]').textContent = parsed.records[11].fields.Name
+   document.querySelector('[yearfrom]').textContent = parsed.records[11].fields["Year from"]
+   document.querySelector('[yearto]').textContent = parsed.records[11].fields["Year to"]
+   document.querySelector('[ct2]').textContent = parsed.records[0].fields.Name
+   document.querySelector('[ct2from]').textContent = parsed.records[0].fields["Year from"]
+   document.querySelector('[ct2to]').textContent = parsed.records[0].fields["Year to"]
+   document.querySelector('[ct3]').textContent = parsed.records[8].fields.Name
+   document.querySelector('[ct3from]').textContent = parsed.records[8].fields["Year from"]
+   document.querySelector('[ct3to]').textContent = parsed.records[8].fields["Year to"]
+   document.querySelector('[ct4]').textContent = parsed.records[1].fields.Name
+   document.querySelector('[ct4from]').textContent = parsed.records[2].fields["Year from"]
+   document.querySelector('[ct4to]').textContent = parsed.records[2].fields["Year to"]
+   document.querySelector('[ct5]').textContent = parsed.records[13].fields.Name
+   document.querySelector('[ct5from]').textContent = parsed.records[13].fields["Year from"]
+   document.querySelector('[ct5to]').textContent = parsed.records[13].fields["Year to"]
+   document.querySelector('[ct6]').textContent = parsed.records[12].fields.Name
+   document.querySelector('[ct6from]').textContent = parsed.records[3].fields["Year from"]
+   document.querySelector('[ct6to]').textContent = parsed.records[3].fields["Year to"]
+   document.querySelector('[ct7]').textContent = parsed.records[14].fields.Name
+   document.querySelector('[ct7from]').textContent = parsed.records[14].fields["Year from"]
+   document.querySelector('[ct7to]').textContent = parsed.records[14].fields["Year to"]
+   document.querySelector('[ct8]').textContent = parsed.records[9].fields.Name
+   document.querySelector('[ct8from]').textContent = parsed.records[9].fields["Year from"]
+   document.querySelector('[ct8to]').textContent = parsed.records[9].fields["Year to"]
+   document.querySelector('[ct9]').textContent = parsed.records[11].fields.Name
+   document.querySelector('[ct9from]').textContent = parsed.records[11].fields["Year from"]
+   document.querySelector('[ct9to]').textContent = parsed.records[11].fields["Year to"]  
+   document.querySelector('[ct10]').textContent = parsed.records[11].fields.Name
+   document.querySelector('[ct10from]').textContent = parsed.records[11].fields["Year from"]
+   document.querySelector('[ct10to]').textContent = parsed.records[11].fields["Year to"] 
+   document.querySelector('[ct11]').textContent = parsed.records[11].fields.Name
+   document.querySelector('[ct11from]').textContent = parsed.records[11].fields["Year from"]
+   document.querySelector('[ct11to]').textContent = parsed.records[11].fields["Year to"] 
   })
   .catch(error => console.log('error', error))  
 
