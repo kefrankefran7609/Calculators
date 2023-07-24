@@ -16,6 +16,7 @@ var requestOptions = {
 fetch("https://api.airtable.com/v0/apphKFqKdClqcgF26/tbl859m8WhwIV59tT", requestOptions)
   .then(response => response.text())
   .then(data =>  { 
+   const parsed = JSON.parse(data)
   /* Give the values to the elements on the page from our APi call */
    console.log(parsed)
    document.querySelectorAll('[pageheading]').forEach(el => el.textContent = parsed.records[24].fields["Main allowances"])
