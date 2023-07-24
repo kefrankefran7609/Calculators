@@ -16,7 +16,6 @@ var requestOptions = {
 fetch("https://api.airtable.com/v0/apphKFqKdClqcgF26/tblUJeRe8ao2unR2m", requestOptions)
   .then(response => response.text())
   .then(data =>  { 
-  const parsed = JSON.parse(data)
   /* Give the values to the elements on the page from our APi call */	  
    document.querySelector('[class1title]').textContent = parsed.records[0].fields["Class 1 (Employees)"]
    document.querySelector('[class1employee]').textContent = parsed.records[0].fields.Employee
@@ -82,7 +81,6 @@ const allChildrenEmpty = Array.from(children).every(isNodeEmpty);
 if(allChildrenEmpty){
 	el.classList.add('hide')
 }
-console.log(allChildrenEmpty)
 })
 
 const rows = document.querySelectorAll('.tax-data_table-row:not(.hide):not(.is--first-row)').forEach((element, index) => {
