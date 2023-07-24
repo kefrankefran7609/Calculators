@@ -42,6 +42,31 @@ fetch("https://api.airtable.com/v0/apphKFqKdClqcgF26/tblKnSGmzoxSyFC3Y", request
    document.querySelector('[sixth22-23]').textContent = parsed.records[3].fields["Year to"]     
    document.querySelector('[note]').innerHTML = parsed.records[5].fields.Notes  
   })
-  .catch(error => console.log('error', error))  
+  .catch(error => console.log('error', error)) 
+
+   /***** Hiding rows that don't receive content from Airtbale *****/
+setTimeout(() => {
+document.querySelectorAll('.tax-data_table-row').forEach((el) => {
+var children = el.children
+function isNodeEmpty(node) {
+  return !node.textContent.trim(); 	
+}
+// Check if all children are empty
+const allChildrenEmpty = Array.from(children).every(isNodeEmpty);
+if(allChildrenEmpty){
+	el.classList.add('hide')
+}
+console.log(allChildrenEmpty)
+})
+
+const rows = document.querySelectorAll('.tax-data_table-row:not(.hide):not(.is--first-row)').forEach((element, index) => {
+    if (index % 2 === 0) {
+      element.style.background = "#FFFFFF"
+    } else {
+      element.style.background = "rgba(110, 200, 87, .2)"
+    }
+  });
+}, 1000)
+  
 /*****  End of Webflow push function *****/
 })
