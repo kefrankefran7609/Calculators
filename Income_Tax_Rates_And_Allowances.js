@@ -69,7 +69,7 @@ fetch("https://api.airtable.com/v0/apphKFqKdClqcgF26/tbl859m8WhwIV59tT", request
    document.querySelectorAll('[mabandsadditional]').forEach((el) => {
    el.textContent = parsed.records[7].fields["Rate bands"]
    })
-   document.querySelector('[pageheading]').textContent = parsed.records[7].fields["Main allowances"]
+   document.querySelectorAll('[pageheading]').forEach(el => el.textContent = parsed.records[24].fields["Main allowances"])
    document.querySelector('[mabandsadditional21-22]').textContent = parsed.records[7].fields["Year from"]
    document.querySelector('[mabandsadditional22-23]').textContent = parsed.records[7].fields["Year to"]
    document.querySelector('[mabandsadditionalg]').textContent = parsed.records[7].fields["General income"]
