@@ -89,7 +89,7 @@ const rows = document.querySelectorAll('.tax-data_table-row:not(.hide):not(.is--
     if (index % 2 === 0) {
       element.style.background = "#FFFFFF"
     } else {
-      element.classList.add('color-bg') = "rgba(110, 200, 87, .2)"
+      element.classList.add('color-bg')
     }
   });
 }, 1000)
