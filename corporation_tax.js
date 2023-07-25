@@ -18,7 +18,6 @@ fetch("https://api.airtable.com/v0/apphKFqKdClqcgF26/tblt7D4MfSbOEKyFF", request
   .then(data =>  { 
    const parsed = JSON.parse(data)
   /* Give the values to the elements on the page from our APi call */
-   console.log(parsed)
    document.querySelectorAll('[pageheading]').forEach(el => el.textContent = parsed.records[7].fields.Name)
    document.querySelector('[yearfrom]').textContent = parsed.records[7].fields["Year from"]
    document.querySelector('[yearto]').textContent = parsed.records[7].fields["Year to"]
@@ -58,7 +57,8 @@ fetch("https://api.airtable.com/v0/apphKFqKdClqcgF26/tblt7D4MfSbOEKyFF", request
    document.querySelector('[payrolltopnote]').innerHTML = parsed.records[7].fields.Notes ? parsed.records[7].fields.Notes : ""
    document.querySelector('[payrollbottomnote]').innerHTML = parsed.records[0].fields.Notes ? parsed.records[0].fields.Notes : ""
 
-	  document.querySelectorAll('.tax-data_table-row').forEach((el) => {
+/* Hiding rows that don't receive content from Airtable */
+document.querySelectorAll('.tax-data_table-row').forEach((el) => {
 var children = el.children
 function isNodeEmpty(node) {
   return !node.textContent.trim(); 	
@@ -80,27 +80,4 @@ const rows = document.querySelectorAll('.tax-data_table-row:not(.hide):not(.is--
   })
   .catch(error => console.log('error', error))  
 
-  /* Hiding rows that don't receive content from Airtbale 
-setTimeout(() => {
-document.querySelectorAll('.tax-data_table-row').forEach((el) => {
-var children = el.children
-function isNodeEmpty(node) {
-  return !node.textContent.trim(); 	
-}
-// Check if all children are empty
-const allChildrenEmpty = Array.from(children).every(isNodeEmpty);
-if(allChildrenEmpty){
-	el.classList.add('hide')
-}
-})
-
-const rows = document.querySelectorAll('.tax-data_table-row:not(.hide):not(.is--first-row)').forEach((element, index) => {
-    if (index % 2 === 0) {
-      element.style.background = "#FFFFFF"
-    } else {
-      element.classList.add('color-bg')
-    }
-  });
-}, 1000)
-	*/
 })
