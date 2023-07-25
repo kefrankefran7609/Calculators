@@ -377,7 +377,7 @@ if(country === 'england' || country === 'ireland'){
  var rate6 = w2rate6
  }
  
- if(country === 'scotland' && situation === 'second'){
+ if(country === 'scotland' && (situation === 'second' || situation === 'third')){
   var from1 = s2from1
   var from2 = s2from2
   var from3 = s2from3
