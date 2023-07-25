@@ -57,10 +57,30 @@ fetch("https://api.airtable.com/v0/apphKFqKdClqcgF26/tblt7D4MfSbOEKyFF", request
    document.querySelector('[ct11to]').textContent = parsed.records[6].fields["Year to"] 
    document.querySelector('[payrolltopnote]').innerHTML = parsed.records[7].fields.Notes
    document.querySelector('[payrollbottomnote]').innerHTML = parsed.records[0].fields.Notes
+
+	  document.querySelectorAll('.tax-data_table-row').forEach((el) => {
+var children = el.children
+function isNodeEmpty(node) {
+  return !node.textContent.trim(); 	
+}
+// Check if all children are empty
+const allChildrenEmpty = Array.from(children).every(isNodeEmpty);
+if(allChildrenEmpty){
+	el.classList.add('hide')
+}
+})
+
+const rows = document.querySelectorAll('.tax-data_table-row:not(.hide):not(.is--first-row)').forEach((element, index) => {
+    if (index % 2 === 0) {
+      element.style.background = "#FFFFFF"
+    } else {
+      element.classList.add('color-bg')
+    }
+  });
   })
   .catch(error => console.log('error', error))  
 
-  /***** Hiding rows that don't receive content from Airtbale *****/
+  /* Hiding rows that don't receive content from Airtbale 
 setTimeout(() => {
 document.querySelectorAll('.tax-data_table-row').forEach((el) => {
 var children = el.children
@@ -82,5 +102,5 @@ const rows = document.querySelectorAll('.tax-data_table-row:not(.hide):not(.is--
     }
   });
 }, 1000)
-	
+	*/
 })
