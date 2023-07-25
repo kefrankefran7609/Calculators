@@ -411,6 +411,10 @@ if(country === 'england' || country === 'ireland'){
 if(country != 'wales' && situation === 'second'){
    add = price * rateAdd
 }
+
+if(country == 'scotland' && situation === 'third'){
+    add = 0
+}
   
 
 /***** Calculating taxes *****/
