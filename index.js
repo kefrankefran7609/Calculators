@@ -491,5 +491,15 @@ document.querySelector('#resultName').textContent = resultName
 /* End of Event Listener */
 })
 
+/* Showing the right situation select fields */
+document.querySelector('#country').addEventListener('click', (e) => {
+    if(e.target.value != "scotland"){
+        document.querySelector('#scotland').style.display = "none"
+        document.querySelector('#notscotland').style.display = "flex"
+    } else {
+        document.querySelector('#scotland').style.display = "flex"
+        document.querySelector('#notscotland').style.display = "none"
+    }
+})
 
 });
