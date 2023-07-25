@@ -298,6 +298,7 @@ var situation = document.querySelector('#situationNotScotland').value
 var situation = document.querySelector('#situationScotland').value
  }
 
+ console.log(situation)
 	
  
 /* Assign default values to variables*/
@@ -497,7 +498,8 @@ document.querySelector('#resultName').textContent = resultName
 })
 
 /* Showing the right situation select fields */
-document.querySelector('#country').addEventListener('click', (e) => {
+document.querySelector('#country').addEventListener('onchange', (e) => {
+    console.log(e.target.value)
     if(e.target.value != "scotland"){
         document.querySelector('#scotland').style.display = "none"
         document.querySelector('#notscotland').style.display = "flex"
