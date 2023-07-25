@@ -500,12 +500,12 @@ document.querySelector('#resultName').textContent = resultName
 /* Showing the right situation select fields */
 document.querySelector('#country').addEventListener('change', (e) => {
     console.log(e.target.value)
-    if(e.target.value != "scotland"){
-        document.querySelector('#scotland').style.display = "none"
-        document.querySelector('#notscotland').style.display = "flex"
+   if(e.target.value != "scotland"){
+        document.querySelector('[scotland]').style.display = "none"
+        document.querySelector('[notscotland]').style.display = "flex"
     } else {
-        document.querySelector('#scotland').style.display = "flex"
-        document.querySelector('#notscotland').style.display = "none"
+        document.querySelector('[scotland]').style.display = "flex"
+        document.querySelector('[notscotland]').style.display = "none"
     }
 })
 
