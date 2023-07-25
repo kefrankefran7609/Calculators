@@ -498,7 +498,7 @@ document.querySelector('#resultName').textContent = resultName
 })
 
 /* Showing the right situation select fields */
-document.querySelector('#country').addEventListener('onchange', (e) => {
+document.querySelector('#country').addEventListener('change', (e) => {
     console.log(e.target.value)
     if(e.target.value != "scotland"){
         document.querySelector('#scotland').style.display = "none"
