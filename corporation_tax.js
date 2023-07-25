@@ -55,8 +55,8 @@ fetch("https://api.airtable.com/v0/apphKFqKdClqcgF26/tblt7D4MfSbOEKyFF", request
    document.querySelector('[ct11]').textContent = parsed.records[6].fields.Name
    document.querySelector('[ct11from]').textContent = parsed.records[6].fields["Year from"]
    document.querySelector('[ct11to]').textContent = parsed.records[6].fields["Year to"] 
-   document.querySelector('[payrolltopnote]').innerHTML = parsed.records[7].fields.Notes
-   document.querySelector('[payrollbottomnote]').innerHTML = parsed.records[0].fields.Notes
+   document.querySelector('[payrolltopnote]').innerHTML = parsed.records[7].fields.Notes ? parsed.records[7].fields.Notes : ""
+   document.querySelector('[payrollbottomnote]').innerHTML = parsed.records[0].fields.Notes ? parsed.records[0].fields.Notes : ""
 
 	  document.querySelectorAll('.tax-data_table-row').forEach((el) => {
 var children = el.children
