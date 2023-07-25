@@ -292,7 +292,12 @@ document.querySelector('#calculate').addEventListener('click', (e) => {
  /* Getting values from the form */
  var price = document.querySelector('#price').value
  var country = document.querySelector('#country').value
- var situation = document.querySelector('#situation').value
+ if(country != "scotland"){
+var situation = document.querySelector('#situationNotScotland').value
+ } else {
+var situation = document.querySelector('#situationScotland').value
+ }
+
 	
  
 /* Assign default values to variables*/
