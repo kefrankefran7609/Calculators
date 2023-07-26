@@ -47,8 +47,6 @@ inputs.forEach((input) => {
     document.querySelector("#calculate").addEventListener("click", (e) => {
         e.preventDefault();
         var salary = document.querySelector("#salary").value,
-            frequency = document.querySelector("#frequency").value,
-            years = document.querySelector("#years").value,
             country = document.querySelector("#country").value,
             primaryRate = 0.12,
             upperRate = 0.02,
