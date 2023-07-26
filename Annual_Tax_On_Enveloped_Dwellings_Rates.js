@@ -1,7 +1,7 @@
 /* You can remove this Webflow function is your not using webflow to develop your project */
 window.Webflow ||= [];
 window.Webflow.push(() => {
-
+console.log("hey")
 /*   API call to airtable to get main allowances table  */
 var myHeaders = new Headers();
 myHeaders.append("Authorization", "Bearer keyPbt2NnvY5saxet");
