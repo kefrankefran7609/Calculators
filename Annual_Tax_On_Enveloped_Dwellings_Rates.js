@@ -1,6 +1,7 @@
 /* You can remove this Webflow function is your not using webflow to develop your project */
+window.Webflow ||= [];
+window.Webflow.push(() => {
 
-console.log("hey")
 /*   API call to airtable to get main allowances table  */
 var myHeaders = new Headers();
 myHeaders.append("Authorization", "Bearer keyPbt2NnvY5saxet");
@@ -16,9 +17,9 @@ fetch("https://api.airtable.com/v0/apphKFqKdClqcgF26/tblKnSGmzoxSyFC3Y", request
   .then(response => response.text())
   .then(data =>  { 
   const parsed = JSON.parse(data)
-   console.log(parsed)
+
   /* Give the values to the elements on the page from our API call */
-   document.querySelectorAll('[pageheading]').forEach(el => el.textContent = parsed.records[5].fields["Property value"]
+   document.querySelectorAll('[pageheading]').forEach(el => el.textContent = parsed.records[5].fields["Property value"])
    document.querySelector('[title]').textContent = parsed.records[2].fields["Property value"]
    document.querySelector('[yearfrom]').textContent = parsed.records[2].fields["Year from"]
    document.querySelector('[yearto]').textContent = parsed.records[2].fields["Year to"]   
@@ -68,3 +69,5 @@ const rows = document.querySelectorAll('.tax-data_table-row:not(.hide):not(.is--
   });
 }, 1000)
 
+/*****  End of Webflow push function *****/
+})
