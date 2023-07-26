@@ -17,7 +17,6 @@ fetch("https://api.airtable.com/v0/apphKFqKdClqcgF26/tblKnSGmzoxSyFC3Y", request
   .then(response => response.text())
   .then(data =>  { 
   const parsed = JSON.parse(data)
-
   /* Give the values to the elements on the page from our API call */
    document.querySelectorAll('[pageheading]').forEach(el => el.textContent = parsed.records[5].fields["Property value"])
    document.querySelector('[title]').textContent = parsed.records[2].fields["Property value"]
@@ -42,11 +41,8 @@ fetch("https://api.airtable.com/v0/apphKFqKdClqcgF26/tblKnSGmzoxSyFC3Y", request
    document.querySelector('[sixth21-22]').textContent = parsed.records[3].fields["Year from"]
    document.querySelector('[sixth22-23]').textContent = parsed.records[3].fields["Year to"]     
    document.querySelector('[note]').innerHTML = parsed.records[5].fields.Notes  
-  })
-  .catch(error => console.log('error', error)) 
 
-   /***** Hiding rows that don't receive content from Airtbale *****/
-setTimeout(() => {
+      /***** Hiding rows that don't receive content from Airtbale *****/
 document.querySelectorAll('.tax-data_table-row').forEach((el) => {
 var children = el.children
 function isNodeEmpty(node) {
@@ -67,7 +63,8 @@ const rows = document.querySelectorAll('.tax-data_table-row:not(.hide):not(.is--
       element.classList.add('color-bg')
     }
   });
-}, 1000)
+  })
+  .catch(error => console.log('error', error)) 
 
 /*****  End of Webflow push function *****/
 })
