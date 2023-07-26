@@ -1,6 +1,5 @@
 /* You can remove this Webflow function is your not using webflow to develop your project */
-window.Webflow ||= [];
-window.Webflow.push(() => {
+
 console.log("hey")
 /*   API call to airtable to get main allowances table  */
 var myHeaders = new Headers();
@@ -68,6 +67,4 @@ const rows = document.querySelectorAll('.tax-data_table-row:not(.hide):not(.is--
     }
   });
 }, 1000)
-  
-/*****  End of Webflow push function *****/
-})
+
