@@ -3,7 +3,7 @@ window.Webflow ||= [];
 window.Webflow.push(() => {
 
 
-/* Payroll Calculator */
+/* SDLT Calculator */
 
 /* Quering all inputs */
 const inputs = document.querySelectorAll('.input');
@@ -377,7 +377,7 @@ if(country === 'england' || country === 'ireland'){
  var rate6 = w2rate6
  }
  
- if(country === 'scotland' && (situation === 'second' || situation === 'third')){
+ if(country === 'scotland' && situation === 'second'){
   var from1 = s2from1
   var from2 = s2from2
   var from3 = s2from3
