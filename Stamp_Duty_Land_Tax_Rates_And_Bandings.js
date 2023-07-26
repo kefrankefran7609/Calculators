@@ -61,6 +61,8 @@ fetch("https://api.airtable.com/v0/apphKFqKdClqcgF26/tblIt28vfTJiKpCe1", request
    document.querySelector('[walesaddfourthrate]').textContent = parsed.records[27].fields["1st row"]
    document.querySelector('[walesaddfifth]').textContent = parsed.records[21].fields.Name
    document.querySelector('[walesaddfifthrate]').textContent = parsed.records[21].fields["1st row"]
+   document.querySelector('[walesaddsixth]').textContent = parsed.records[21].fields.Name
+   document.querySelector('[walesaddsixthrate]').textContent = parsed.records[21].fields["1st row"]
   })
   .catch(error => console.log('error', error))  
 
