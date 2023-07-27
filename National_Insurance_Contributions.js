@@ -66,13 +66,9 @@ fetch("https://api.airtable.com/v0/apphKFqKdClqcgF26/tblUJeRe8ao2unR2m", request
    document.querySelector('[employmentemployee]').textContent = parsed.records[3].fields.Employee
    document.querySelector('[employmentemployer]').textContent = parsed.records[3].fields.Employer
    document.querySelector('[note]').innerHTML = parsed.records[15].fields.Notes
-   
-  })
-  .catch(error => console.log('error', error))  
 
-/***** Hiding rows that don't receive content from Airtbale *****/
-setTimeout(() => {
-document.querySelectorAll('.tax-data_table-row').forEach((el) => {
+   /***** Hiding rows that don't receive content from Airtbale *****/
+   document.querySelectorAll('.tax-data_table-row').forEach((el) => {
 var children = el.children
 function isNodeEmpty(node) {
   return !node.textContent.trim(); 	
@@ -91,6 +87,8 @@ const rows = document.querySelectorAll('.tax-data_table-row:not(.hide):not(.is--
       element.classList.add('color-bg')
     }
   });
-}, 1000)
+  })
+  .catch(error => console.log('error', error))  
+
 })
 /*****  End of Webflow push function *****/
