@@ -66,6 +66,7 @@ fetch("https://api.airtable.com/v0/apphKFqKdClqcgF26/tblUJeRe8ao2unR2m", request
    document.querySelector('[employmentemployee]').textContent = parsed.records[3].fields.Employee
    document.querySelector('[employmentemployer]').textContent = parsed.records[3].fields.Employer
    document.querySelector('[note]').innerHTML = parsed.records[15].fields.Notes
+   document.querySelector('[bottomnote]').innerHTML = parsed.records[6].fields.Notes
 
    /***** Hiding rows that don't receive content from Airtbale *****/
    document.querySelectorAll('.tax-data_table-row').forEach((el) => {
