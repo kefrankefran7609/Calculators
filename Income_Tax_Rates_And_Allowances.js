@@ -87,6 +87,7 @@ fetch("https://api.airtable.com/v0/apphKFqKdClqcgF26/tbl859m8WhwIV59tT", request
   .then(data =>  { 
   const parsed = JSON.parse(data)
   /* Give the values to the elements on the page from our APi call */
+   document.querySelectorAll('[pageheading0]').forEach(el => el.textContent = parsed.records[4].fields["Main allowances"])
    document.querySelector('[rbc]').textContent = parsed.records[3].fields["Remittance basis charge"]
    document.querySelector('[rbcto]').textContent = parsed.records[3].fields["Year from"]
    document.querySelector('[rbcfrom]').textContent = parsed.records[3].fields["Year to"]
