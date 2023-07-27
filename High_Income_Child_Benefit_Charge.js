@@ -45,7 +45,7 @@ fetch("https://api.airtable.com/v0/apphKFqKdClqcgF26/tblf4WESF6Q7u0fZp", request
    document.querySelector('[excessinputs21-23]').textContent = parsed.records[1].fields["Year from"]
    document.querySelector('[topnote]').innerHTML = parsed.records[4].fields.Notes
    document.querySelector('[bottomnote]').innerHTML = parsed.records[9].fields.Notes
-   document.querySelectorAll('[pageheading]').forEach(el => el.textContent = parsed.records[4].fields["Remittance basis charge"]
+   document.querySelectorAll('[pageheading0]').forEach(el => el.textContent = parsed.records[4].fields["Remittance basis charge"]
  })
   
   .catch(error => console.log('error', error))
