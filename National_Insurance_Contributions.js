@@ -51,11 +51,9 @@ fetch("https://api.airtable.com/v0/apphKFqKdClqcgF26/tblUJeRe8ao2unR2m", request
    document.querySelector('[nonic1]').textContent = parsed.records[8].fields["Class 1 (Employees)"]
    document.querySelector('[nonic1employee]').textContent = parsed.records[8].fields.Employee
    document.querySelector('[nonic1employer]').textContent = parsed.records[8].fields.Employer
-   /*
-   document.querySelector('[nonic2]').textContent = parsed.records[7].fields["Class 1 (Employees)"]
-   document.querySelector('[nonic2employee]').textContent = parsed.records[7].fields.Employee
-   document.querySelector('[nonic2employer]').textContent = parsed.records[7].fields.Employer
-  */
+   document.querySelector('[nonic2]').textContent = parsed.records[15].fields["Class 1 (Employees)"]
+   document.querySelector('[nonic2employee]').textContent = parsed.records[15].fields.Employee
+   document.querySelector('[nonic2employer]').textContent = parsed.records[15].fields.Employer
   document.querySelector('[mainrate]').textContent = parsed.records[5].fields["Class 1 (Employees)"]
    document.querySelector('[mainrateemployee]').textContent = parsed.records[5].fields.Employee
    document.querySelector('[mainrateemployer]').textContent = parsed.records[5].fields.Employer
