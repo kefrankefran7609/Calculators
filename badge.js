@@ -1,3 +1,7 @@
+
+
+
+
 var contentMediumDesktop = `
 <img id="1" src="https://cumbriafhs.com/cumbria/images/PARISH_MAP.png" name="parishes" alt="responsive image map of parishes" usemap="#parishes" style="border-style:none; display: block; max-width: 100%; height: auto; vertical-align: middle; overflow-clip-margin: content-box; overflow: clip;">
 <map id="parishes" name="parishes">
@@ -899,10 +903,12 @@ var contentSmallPhone = `
 
 
 if($(window).width() >1280 ) {
+document.querySelector('.bubble-element').style.width = "1140px"
 document.querySelector('.bubble-element').innerHTML = contentMediumDesktop
 }
 
 if($(window).width() <= 1280) {
+document.querySelector('.bubble-element').style.width = "930px"
 document.querySelector('.bubble-element').innerHTML = contentSmallDesktop
 }
 
