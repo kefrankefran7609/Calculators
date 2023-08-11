@@ -899,11 +899,11 @@ var contentSmallPhone = `
 
 
 if($(window).width() >1280 ) {
-document.querySelector('[map]').innerHTML = contentMediumDesktop
+document.querySelector('.bubble-element').innerHTML = contentMediumDesktop
 }
 
 if($(window).width() <= 1280) {
-document.querySelector('[map]').innerHTML = contentSmallDesktop
+document.querySelector('.bubble-element').innerHTML = contentSmallDesktop
 }
 
 if($(window).width() < 991) {
