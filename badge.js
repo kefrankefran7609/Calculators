@@ -907,35 +907,35 @@ document.querySelector('.bubble-element').innerHTML = contentSmallDesktop
 }
 
 if($(window).width() < 991) {
-document.querySelector('[map]').innerHTML = contentTablet
+document.querySelector('.bubble-element').innerHTML = contentTablet
 }
 
 if($(window).width() < 768) {
-document.querySelector('[map]').innerHTML = contentLargePhone
+document.querySelector('.bubble-element').innerHTML = contentLargePhone
 }
 
 if($(window).width() < 410) {
-document.querySelector('[map]').innerHTML = contentSmallPhone
+document.querySelector('.bubble-element').innerHTML = contentSmallPhone
 }
 
 window.addEventListener('resize', () => {
 if($(window).width() >1280 ) {
-document.querySelector('[map]').innerHTML = contentMediumDesktop
+document.querySelector('.bubble-element').innerHTML = contentMediumDesktop
 }
 
 if($(window).width() <= 1280) {
-document.querySelector('[map]').innerHTML = contentSmallDesktop
+document.querySelector('.bubble-element').innerHTML = contentSmallDesktop
 }
 
 if($(window).width() < 991) {
-document.querySelector('[map]').innerHTML = contentTablet
+document.querySelector('.bubble-element').innerHTML = contentTablet
 }
 
 if($(window).width() < 768) {
-document.querySelector('[map]').innerHTML = contentLargePhone
+document.querySelector('.bubble-element').innerHTML = contentLargePhone
 }
 
 if($(window).width() < 410) {
-document.querySelector('[map]').innerHTML = contentSmallPhone
+document.querySelector('.bubble-element').innerHTML = contentSmallPhone
 }
 })
