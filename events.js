@@ -196,8 +196,8 @@ async function updateList(data) {
     prevPage = data.prevPage
     document.querySelector('[nextpage]').style.display = nextPage === null ? "none" : "flex"
     document.querySelector('[prevpage]').style.display = prevPage === null ? "none" : "flex"    
-    document.querySelector('[noresultwrapper]').style.display = data.itemsReceived = 0 ? "flex" : "none"
-    document.querySelector('[pagination]').style.display = data.itemsReceived = 0 ? "none" : "flex"
+    document.querySelector('[noresultwrapper]').style.display = data.itemsReceived == 0 ? "flex" : "none"
+    document.querySelector('[pagination]').style.display = data.itemsReceived == 0 ? "none" : "flex"
     setTimeout(() => {
       document.querySelector('[loaderwrapper]').style.display = "none"
       document.querySelector('[loadingcontent]').classList.add('show')     
