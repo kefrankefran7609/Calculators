@@ -41,7 +41,7 @@ const inputs = document.querySelectorAll(".input");
 inputs.forEach((input) => {
     (input.value = "0"),
         input.addEventListener("change", (e) => {
-            "" === e.path[0].value && (input.value = "0");
+            "" === e.target.value && (input.value = "0");  //path[0]
         });
 }),
     document.querySelector("#calculate").addEventListener("click", (e) => {
