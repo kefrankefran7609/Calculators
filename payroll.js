@@ -18,7 +18,7 @@ fetch("https://api.airtable.com/v0/apphKFqKdClqcgF26/tblHNDCEXfqRF3F33", request
   .then(response => response.text())
   .then(data =>  { 
   const parsed = JSON.parse(data)
-  console.log(parsed)
+  /*console.log(parsed)*/
   /* Give the values to the elements on the page from our APi call */
    document.querySelectorAll('[pageheading]').forEach(el => el.textContent = parsed.records[1].fields.Name0)
    document.querySelector('[payroll1]').textContent = parsed.records[3].fields.Name
@@ -80,11 +80,7 @@ inputs.forEach((input) => {
                 taxRate4 = 0.42,
                 taxRate5 = 0.47;
 	          }
-	console.log(salary)
-	console.log(gross1)
         revisedTax = (salary > 100000) ? Math.max(0, gross1 - (salary - 100000) * .5) : 12750
-	console.log(revisedTax)
-	console.log(revisedTax.toFixed(2).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","))
         document.querySelector("#payroll").textContent = revisedTax.toFixed(2).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
         var additionalTax = salary > 100000 && country != "scotland" ?  (gross1 - revisedTax) * taxRate2 : salary > 100000 && country == "scotland" ? (gross1 - revisedTax) * taxRate4 : 0
         if (salary > gross2) var bracket1 = band1 * taxRate1;
