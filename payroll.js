@@ -81,6 +81,7 @@ inputs.forEach((input) => {
                 taxRate5 = 0.47;
 	          }
         revisedTax = salary > 100000 ? Math.max(0, gross1 - (salary - 100000) * .5) : 0
+	console.log(revisedTax)
 	console.log(revisedTax.toFixed(2).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","))
         document.querySelector("#payroll").textContent = revisedTax.toFixed(2).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
         var additionalTax = salary > 100000 && country != "scotland" ?  (gross1 - revisedTax) * taxRate2 : salary > 100000 && country == "scotland" ? (gross1 - revisedTax) * taxRate4 : 0
