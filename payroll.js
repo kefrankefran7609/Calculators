@@ -82,7 +82,7 @@ inputs.forEach((input) => {
 	          }
 	console.log(salary)
 	console.log(gross1)
-        revisedTax = (salary > 100000) ? Math.max(0, gross1 - (salary - 100000) * .5) : 0
+        revisedTax = (salary > 100000) ? Math.max(0, gross1 - (salary - 100000) * .5) : 12750
 	console.log(revisedTax)
 	console.log(revisedTax.toFixed(2).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","))
         document.querySelector("#payroll").textContent = revisedTax.toFixed(2).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
