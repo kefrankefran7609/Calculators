@@ -80,6 +80,8 @@ inputs.forEach((input) => {
                 taxRate4 = 0.42,
                 taxRate5 = 0.47;
 	          }
+	console.log(salary)
+	console.log(gross1)
         revisedTax = salary > 100000 ? Math.max(0, gross1 - (salary - 100000) * .5) : 0
 	console.log(revisedTax)
 	console.log(revisedTax.toFixed(2).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","))
@@ -104,14 +106,14 @@ inputs.forEach((input) => {
         if (salary / 12 > upperEarnings) var uel = (salary / 12 - upperEarnings) * upperRate;
         else var uel = 0;*/
         var totalInsurance = (uel + between) * 12;
-        console.log(bracket1)
+       /* console.log(bracket1)
         console.log(bracket2)
         console.log(bracket3)
         console.log(bracket4)
         console.log(bracket5)
         console.log("additional" + additionalTax)
         console.log("revised" + revisedTax)
-        console.log("insurance" + totalInsurance)
+        console.log("insurance" + totalInsurance)*/
         document.querySelector("#totalIncome").textContent = (bracket1 + bracket2 + bracket3 + bracket4 + bracket5 + additionalTax)
             .toFixed(2)
             .toString()
