@@ -902,23 +902,21 @@ var contentSmallPhone = `
 </map>`
 
 
-if($(window).width() >1280 ) {
+if($(window).width() >1200 ) {
 document.querySelector('[map]').style.width = "1140px"
 document.querySelector('[map]').innerHTML = contentMediumDesktop
 }
 
-if($(window).width() <= 1280) {
+if($(window).width() <= 1200) {
 document.querySelector('[map]').style.width = "930px"
 document.querySelector('[map]').innerHTML = contentSmallDesktop
 }
 
 if($(window).width() < 991) {
-document.querySelector('[map]').style.width = "720px"
 document.querySelector('[map]').innerHTML = contentTablet
 }
 
 if($(window).width() < 768) {
-document.querySelector('[map]').style.width = "576px"
 document.querySelector('[map]').innerHTML = contentLargePhone
 }
 
