@@ -1280,17 +1280,17 @@ document.querySelector('[map]').innerHTML = contentPhone1
 }
 
 if($(window).width() < 430) {
-document.querySelector('[map]').style.width = "420px"
+document.querySelector('[map]').style.width = "360px"
 document.querySelector('[map]').innerHTML = contentPhone2
 }
 
 if($(window).width() < 390) {
-    document.querySelector('[map]').style.width = "405px"
+    document.querySelector('[map]').style.width = "345px"
     document.querySelector('[map]').innerHTML = contentPhone3
 }
 
 if($(window).width() < 375) {
-    document.querySelector('[map]').style.width = "350px"
+    document.querySelector('[map]').style.width = "290px"
     document.querySelector('[map]').innerHTML = contentPhone4
 }
 
