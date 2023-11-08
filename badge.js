@@ -723,7 +723,7 @@ var contentLargePhone = `
 
 
 var contentPhone1 = `
-<img id="1" src="https://cumbriafhs.com/cumbria/images/PARISH_MAP.png" name="parishes" alt="responsive image map of parishes" usemap="#parishes" style="border-style:none; display: block; max-width: 100%; height: auto; vertical-align: middle; overflow-clip-margin: content-box; overflow: clip;">
+<img id="1" src="https://cumbriafhs.com/cumbria/images/PARISH_MAP.png" name="parishes" alt="responsive image map of parishes" usemap="#parishes" style="border-style:none; display: block; max-width: 100%; height: auto; vertical-align: middle; overflow-x: auto; overflow-clip-margin: content-box; overflow: clip;">
 <map id="parishes" name="parishes">
 <area shape="poly" alt="Kirkby Stephen" coords="364,329,346,331,341,333,340,336,337,339,336,342,340,359,323,368,319,366,322,351,317,348,319,337,317,336,314,335,311,333,308,331,308,327,308,323,314,314,308,311,302,309,302,306,307,305,321,307,326,305,330,307,335,306,340,307,345,308,348,312,352,316,370,322" href="https://cumbriafhs.com/cgi-bin/cumbria/cfhs_main.pl?action=cfhs_parish_data&amp;parish=wks" title="Kirkby Stephen">
 <area shape="poly" alt="Crosby Garrett" coords="306,323,306,324,306,326,305,326,305,328,304,328,302,328,301,326,301,326,300,326,300,326,299,326,298,326,296,326,295,326,292,326,288,324,289,322,292,322,297,322,298,321,299,321,299,319,299,316,301,313,301,311,304,311,308,312,313,314,310,318,308,322,307,323" href="https://cumbriafhs.com/cgi-bin/cumbria/cfhs_main.pl?action=cfhs_parish_data&amp;parish=wcg" title="Crosby Garrett">
