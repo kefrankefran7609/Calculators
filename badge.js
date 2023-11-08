@@ -903,45 +903,45 @@ var contentSmallPhone = `
 
 
 if($(window).width() >1280 ) {
-document.querySelector('.bubble-element').style.width = "1140px"
-document.querySelector('.bubble-element').innerHTML = contentMediumDesktop
+document.querySelector('[map]').style.width = "1140px"
+document.querySelector('[map]').innerHTML = contentMediumDesktop
 }
 
 if($(window).width() <= 1280) {
-document.querySelector('.bubble-element').style.width = "930px"
-document.querySelector('.bubble-element').innerHTML = contentSmallDesktop
+document.querySelector('[map]').style.width = "930px"
+document.querySelector('[map]').innerHTML = contentSmallDesktop
 }
 
 if($(window).width() < 991) {
-document.querySelector('.bubble-element').innerHTML = contentTablet
+document.querySelector('[map]').innerHTML = contentTablet
 }
 
 if($(window).width() < 768) {
-document.querySelector('.bubble-element').innerHTML = contentLargePhone
+document.querySelector('[map]').innerHTML = contentLargePhone
 }
 
 if($(window).width() < 410) {
-document.querySelector('.bubble-element').innerHTML = contentSmallPhone
+document.querySelector('[map]').innerHTML = contentSmallPhone
 }
 
 window.addEventListener('resize', () => {
 if($(window).width() >1280 ) {
-document.querySelector('.bubble-element').innerHTML = contentMediumDesktop
+document.querySelector('[map]').innerHTML = contentMediumDesktop
 }
 
 if($(window).width() <= 1280) {
-document.querySelector('.bubble-element').innerHTML = contentSmallDesktop
+document.querySelector('[map]').innerHTML = contentSmallDesktop
 }
 
 if($(window).width() < 991) {
-document.querySelector('.bubble-element').innerHTML = contentTablet
+document.querySelector('[map]').innerHTML = contentTablet
 }
 
 if($(window).width() < 768) {
-document.querySelector('.bubble-element').innerHTML = contentLargePhone
+document.querySelector('[map]').innerHTML = contentLargePhone
 }
 
 if($(window).width() < 410) {
-document.querySelector('.bubble-element').innerHTML = contentSmallPhone
+document.querySelector('[map]').innerHTML = contentSmallPhone
 }
 })
