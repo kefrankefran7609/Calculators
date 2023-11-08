@@ -908,7 +908,6 @@ document.querySelector('[map]').innerHTML = contentMediumDesktop
 }
 
 if($(window).width() <= 1200) {
-document.querySelector('[map]').style.width = "930px"
 document.querySelector('[map]').innerHTML = contentSmallDesktop
 }
 
