@@ -913,14 +913,17 @@ document.querySelector('[map]').innerHTML = contentSmallDesktop
 }
 
 if($(window).width() < 991) {
+document.querySelector('[map]').style.width = "720px"
 document.querySelector('[map]').innerHTML = contentTablet
 }
 
 if($(window).width() < 768) {
+document.querySelector('[map]').style.width = "576px"
 document.querySelector('[map]').innerHTML = contentLargePhone
 }
 
 if($(window).width() < 410) {
+document.querySelector('[map]').style.width = "930px"
 document.querySelector('[map]').innerHTML = contentSmallPhone
 }
 
