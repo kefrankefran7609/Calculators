@@ -54,6 +54,7 @@ document.querySelectorAll('.nav_top-dropdown-type').forEach(el => {
   })
   e.target.classList.add('is-active')
   const parent = document.querySelector('input[radioflag]:checked').closest('.radio-button')
+  document.querySelector('[country]').textContent = parent.querySelector('.radio-label').textContent
   document.querySelector('[flag]').src = parent.querySelector('.nav_top-flag').src
   document.querySelector('[flag]').srcset = parent.querySelector('.nav_top-flag').srcset
   document.querySelector('[investortype]').textContent = e.target.querySelector('.text-weight-semibold').textContent
