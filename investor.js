@@ -32,7 +32,7 @@ document.querySelector('[opencountrydropdown]').addEventListener('click', () => 
 })
 
 // Changing country
-document.querySelectorAll('[radioflag]').forEach(el => {
+/* document.querySelectorAll('[radioflag]').forEach(el => {
   el.addEventListener('change', (e) => {
 
   document.querySelectorAll('.nav_top-dropdown-type').forEach(els => {
@@ -42,7 +42,7 @@ document.querySelectorAll('[radioflag]').forEach(el => {
     els.style.display = "flex"
   })
   })
-})
+}) */
 
 // Selecting a user type
 document.querySelectorAll('.nav_top-dropdown-type').forEach(el => {
