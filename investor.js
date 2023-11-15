@@ -32,17 +32,21 @@ document.querySelector('[opencountrydropdown]').addEventListener('click', () => 
 })
 
 // Changing country
-/* document.querySelectorAll('[radioflag]').forEach(el => {
+ document.querySelectorAll('[radioflag]').forEach(el => {
   el.addEventListener('change', (e) => {
-
+  const parent = document.querySelector('input[radioflag]:checked').closest('.radio-button')
+  document.querySelector('[country]').textContent = parent.querySelector('.radio-label').textContent
+  document.querySelector('[flag]').src = parent.querySelector('.nav_top-flag').src
+  document.querySelector('[flag]').srcset = parent.querySelector('.nav_top-flag').srcset
+  /*
   document.querySelectorAll('.nav_top-dropdown-type').forEach(els => {
     els.style.display = "none"
   })
   document.querySelectorAll(`[${e.target.value}]`).forEach(els => {
     els.style.display = "flex"
+  })*/
   })
-  })
-}) */
+}) 
 
 // Selecting a user type
 document.querySelectorAll('.nav_top-dropdown-type').forEach(el => {
@@ -53,10 +57,6 @@ document.querySelectorAll('.nav_top-dropdown-type').forEach(el => {
     els.classList.remove('is-active')
   })
   e.target.classList.add('is-active')
-  const parent = document.querySelector('input[radioflag]:checked').closest('.radio-button')
-  document.querySelector('[country]').textContent = parent.querySelector('.radio-label').textContent
-  document.querySelector('[flag]').src = parent.querySelector('.nav_top-flag').src
-  document.querySelector('[flag]').srcset = parent.querySelector('.nav_top-flag').srcset
   document.querySelector('[investortype]').textContent = e.target.querySelector('.text-weight-semibold').textContent
   document.querySelector('[maindropdown]').classList.remove('show')
   document.querySelector('[maindropdownarrow]').classList.remove('show')
