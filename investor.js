@@ -38,6 +38,7 @@ document.querySelectorAll('[radioflag]').forEach(el => {
 document.querySelectorAll('[flag]').forEach(el => {
   el.srcset = e.target.nextElementSibling.srcset
 })
+    document.querySelector('[country]').textContent = e.target.parentElement.lastChild.textContent
   }
   })
 })
