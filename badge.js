@@ -3,7 +3,7 @@
 
 
 var contentMediumDesktop = `
-<img id="1" src="https://cumbriafhs.com/cumbria/images/PARISH_MAP.png" name="parishes" alt="responsive image map of parishes" usemap="#parishes" style="border-style:none; display: block; max-width: 100%; height: auto; vertical-align: middle; overflow-clip-margin: content-box; overflow: clip;">
+<img id="1" src="https://uploads-ssl.webflow.com/649201925b6b46e741566c69/658355e4b9320b8749763bc2_CFHS%20PARISH_MAP.png" name="parishes" alt="responsive image map of parishes" usemap="#parishes" style="border-style:none; display: block; max-width: 100%; height: auto; vertical-align: middle; overflow-clip-margin: content-box; overflow: clip;">
 <map id="parishes" name="parishes">
 <area shape="poly" alt="Kirkby Stephen" coords="1039,940,986,943,972,950,971,959,962,965,958,976,969,1022,922,1050,911,1043,918,1002,905,992,911,961,904,958,895,955,888,950,879,943,878,932,879,922,895,895,879,888,862,883,862,873,875,870,916,875,929,870,940,875,954,872,969,875,985,877,993,890,1004,902,1056,919" href="https://cfhs.bubbleapps.io/version-live/?page=parish-map&parish=wks " title="Kirkby Stephen">
 <area shape="poly" alt="Crosby Garrett" coords="874,922,872,925,872,929,870,931,869,934,866,936,862,935,859,930,858,931,856,930,855,930,852,930,850,930,846,930,841,929,832,929,822,923,824,918,834,917,847,917,851,915,852,915,852,908,854,901,858,893,860,886,869,886,879,890,893,896,885,907,878,917,876,920" href="https://cfhs.bubbleapps.io/version-live/?page=parish-map&parish=wcg" title="Crosby Garrett">
@@ -183,7 +183,7 @@ var contentMediumDesktop = `
 
 
 var contentSmallDesktop = `
-<img id="1" src="https://cumbriafhs.com/cumbria/images/PARISH_MAP.png" name="parishes" alt="responsive image map of parishes" usemap="#parishes" style="border-style:none; display: block; max-width: 100%; height: auto; vertical-align: middle; overflow-clip-margin: content-box; overflow: clip;">
+<img id="1" src="https://uploads-ssl.webflow.com/649201925b6b46e741566c69/658355e4b9320b8749763bc2_CFHS%20PARISH_MAP.png" name="parishes" alt="responsive image map of parishes" usemap="#parishes" style="border-style:none; display: block; max-width: 100%; height: auto; vertical-align: middle; overflow-clip-margin: content-box; overflow: clip;">
 <map id="parishes" name="parishes">
 <area shape="poly" alt="Kirkby Stephen" coords="847,766,805,770,793,775,792,782,785,788,782,796,791,834,752,856,743,851,749,817,738,809,743,784,737,782,730,779,724,775,717,769,716,761,717,752,730,730,717,724,703,720,703,712,714,710,747,714,758,710,767,714,779,712,790,714,803,716,810,726,819,736,861,750" href="https://cfhs.bubbleapps.io/version-live/?page=parish-map&parish=wks " title="Kirkby Stephen">
 <area shape="poly" alt="Crosby Garrett" coords="713,752,712,754,712,758,710,759,709,762,707,763,703,763,701,759,700,759,698,759,697,759,695,759,693,759,690,759,686,758,679,758,671,753,672,749,680,748,691,748,694,747,695,746,695,741,696,735,700,728,701,723,708,723,717,726,728,731,722,740,716,748,715,751" href="https://cfhs.bubbleapps.io/version-live/?page=parish-map&parish=wcg" title="Crosby Garrett">
@@ -364,7 +364,7 @@ var contentSmallDesktop = `
 
 
 var contentTablet = `
-<img id="1" src="https://cumbriafhs.com/cumbria/images/PARISH_MAP.png" name="parishes" alt="responsive image map of parishes" usemap="#parishes" style="border-style:none; display: block; max-width: 100%; height: auto; vertical-align: middle; overflow-clip-margin: content-box; overflow: clip;">
+<img id="1" src="https://uploads-ssl.webflow.com/649201925b6b46e741566c69/658355e4b9320b8749763bc2_CFHS%20PARISH_MAP.png" name="parishes" alt="responsive image map of parishes" usemap="#parishes" style="border-style:none; display: block; max-width: 100%; height: auto; vertical-align: middle; overflow-clip-margin: content-box; overflow: clip;">
 <map id="parishes" name="parishes">
 <area shape="poly" alt="Kirkby Stephen" coords="629,569,597,571,588,575,587,580,582,584,580,591,586,619,558,635,551,631,555,606,548,600,551,581,547,580,542,578,537,575,532,570,531,564,532,558,542,542,532,537,522,534,521,528,529,526,554,529,562,526,569,530,577,528,586,529,596,531,601,539,608,546,639,556" href="https://cfhs.bubbleapps.io/version-live/?page=parish-map&parish=wks" title="Kirkby Stephen">
 <area shape="poly" alt="Crosby Garrett" coords="529,558,528,560,528,562,526,563,526,565,524,566,522,566,520,563,519,563,518,563,517,563,516,563,514,563,512,563,509,562,503,562,498,559,499,556,505,555,512,555,515,554,516,553,516,550,517,545,519,540,520,536,526,536,532,539,540,542,535,549,531,555,530,557" href="https://cfhs.bubbleapps.io/version-live/?page=parish-map&parish=wcg" title="Crosby Garrett">
@@ -543,7 +543,7 @@ var contentTablet = `
 </map>`
 
 var contentPhone1 = `
-<img id="1" src="https://cumbriafhs.com/cumbria/images/PARISH_MAP.png" name="parishes" alt="responsive image map of parishes" usemap="#parishes" style="border-style:none; display: block; max-width: 100%; height: auto; vertical-align: middle; overflow-clip-margin: content-box; overflow: clip;">
+<img id="1" src="https://uploads-ssl.webflow.com/649201925b6b46e741566c69/658355e4b9320b8749763bc2_CFHS%20PARISH_MAP.png" name="parishes" alt="responsive image map of parishes" usemap="#parishes" style="border-style:none; display: block; max-width: 100%; height: auto; vertical-align: middle; overflow-clip-margin: content-box; overflow: clip;">
 <map id="parishes" name="parishes">
 <area shape="poly" alt="Kirkby Stephen" coords="364,329,346,331,341,333,340,336,337,339,336,342,340,359,323,368,319,366,322,351,317,348,319,337,317,336,314,335,311,333,308,331,308,327,308,323,314,314,308,311,302,309,302,306,307,305,321,307,326,305,330,307,335,306,340,307,345,308,348,312,352,316,370,322" href="https://cfhs.bubbleapps.io/version-live/?page=parish-map&parish=wks" title="Kirkby Stephen">
 <area shape="poly" alt="Crosby Garrett" coords="306,323,306,324,306,326,305,326,305,328,304,328,302,328,301,326,301,326,300,326,300,326,299,326,298,326,296,326,295,326,292,326,288,324,289,322,292,322,297,322,298,321,299,321,299,319,299,316,301,313,301,311,304,311,308,312,313,314,310,318,308,322,307,323" href="https://cfhs.bubbleapps.io/version-live/?page=parish-map&parish=wcg" title="Crosby Garrett">
@@ -723,7 +723,7 @@ var contentPhone1 = `
 
 
 var contentPhone2 = `
-<img id="1" src="https://cumbriafhs.com/cumbria/images/PARISH_MAP.png" name="parishes" alt="responsive image map of parishes" usemap="#parishes" style="border-style:none; display: block; max-width: 100%; height: auto; vertical-align: middle; overflow-clip-margin: content-box; overflow: clip;">
+<img id="1" src="https://uploads-ssl.webflow.com/649201925b6b46e741566c69/658355e4b9320b8749763bc2_CFHS%20PARISH_MAP.png" name="parishes" alt="responsive image map of parishes" usemap="#parishes" style="border-style:none; display: block; max-width: 100%; height: auto; vertical-align: middle; overflow-clip-margin: content-box; overflow: clip;">
 <map id="parishes" name="parishes">
 <area shape="poly" alt="Kirkby Stephen" coords="328,296,311,297,306,300,306,302,304,304,302,308,306,322,291,331,287,329,289,316,286,313,287,303,285,302,282,301,280,299,277,297,277,294,277,291,282,282,277,280,272,278,272,275,276,274,289,276,293,274,297,276,301,275,306,276,311,276,313,281,317,284,333,290" href="https://cfhs.bubbleapps.io/version-live/?page=parish-map&parish=wks" title="Kirkby Stephen">
 <area shape="poly" alt="Crosby Garrett" coords="276,291,275,291,275,293,274,293,274,294,273,295,272,295,271,293,270,293,270,293,270,293,269,293,268,293,267,293,265,293,262,293,259,291,260,290,263,289,267,289,268,289,269,288,269,286,269,284,270,281,271,279,274,279,277,281,282,282,279,286,277,289,276,290" href="https://cfhs.bubbleapps.io/version-live/?page=parish-map&parish=wcg" title="Crosby Garrett">
@@ -903,7 +903,7 @@ var contentPhone2 = `
 `
 
 var contentPhone3 = `
-<img id="1" src="https://cumbriafhs.com/cumbria/images/PARISH_MAP.png" name="parishes" alt="responsive image map of parishes" usemap="#parishes" style="border-style:none; display: block; max-width: 100%; height: auto; vertical-align: middle; overflow-clip-margin: content-box; overflow: clip;">
+<img id="1" src="https://uploads-ssl.webflow.com/649201925b6b46e741566c69/658355e4b9320b8749763bc2_CFHS%20PARISH_MAP.png" name="parishes" alt="responsive image map of parishes" usemap="#parishes" style="border-style:none; display: block; max-width: 100%; height: auto; vertical-align: middle; overflow-clip-margin: content-box; overflow: clip;">
 <map id="parishes" name="parishes">
 <area shape="poly" alt="Kirkby Stephen" coords="314,284,298,285,294,287,293,290,291,292,290,295,293,309,279,317,275,315,277,303,274,300,275,290,273,290,271,289,268,287,266,285,265,282,266,279,271,271,266,268,261,267,260,264,264,263,277,264,281,263,284,265,288,264,293,264,298,265,300,269,304,273,319,278" href="https://cfhs.bubbleapps.io/version-live/?page=parish-map&parish=wks" title="Kirkby Stephen">
 <area shape="poly" alt="Crosby Garrett" coords="264,279,264,280,264,281,263,281,263,282,262,283,261,283,260,281,259,281,259,281,258,281,258,281,257,281,256,281,254,281,251,281,249,279,249,278,252,277,256,277,257,277,258,276,258,275,258,272,259,270,260,268,263,268,266,269,270,271,267,274,265,277,265,278" href="https://cfhs.bubbleapps.io/version-live/?page=parish-map&parish=wcg" title="Crosby Garrett">
@@ -1083,7 +1083,7 @@ var contentPhone3 = `
 `
 
 var contentPhone4 = `
-<img id="1" src="https://cumbriafhs.com/cumbria/images/PARISH_MAP.png" name="parishes" alt="responsive image map of parishes" usemap="#parishes" style="border-style:none; display: block; max-width: 100%; height: auto; vertical-align: middle; overflow-clip-margin: content-box; overflow: clip;">
+<img id="1" src="https://uploads-ssl.webflow.com/649201925b6b46e741566c69/658355e4b9320b8749763bc2_CFHS%20PARISH_MAP.png" name="parishes" alt="responsive image map of parishes" usemap="#parishes" style="border-style:none; display: block; max-width: 100%; height: auto; vertical-align: middle; overflow-clip-margin: content-box; overflow: clip;">
 <map id="parishes" name="parishes">
 <area shape="poly" alt="Kirkby Stephen" coords="264,239,251,239,247,241,247,243,244,245,243,248,246,260,234,266,231,265,233,254,230,252,231,244,230,243,227,242,226,241,223,239,223,237,223,234,227,227,223,225,219,224,219,222,222,221,233,222,236,221,239,222,242,221,246,222,250,223,252,226,255,229,268,233" href="https://cfhs.bubbleapps.io/version-live/?page=parish-map&parish=wks" title="Kirkby Stephen">
 <area shape="poly" alt="Crosby Garrett" coords="222,234,222,235,222,236,221,236,221,237,220,238,219,237,218,236,218,236,217,236,217,236,216,236,216,236,215,236,214,236,211,236,209,234,209,233,212,233,215,233,216,232,216,232,216,231,217,229,218,227,218,225,221,225,223,226,227,227,225,230,223,233,223,234" href="https://cfhs.bubbleapps.io/version-live/?page=parish-map&parish=wcg" title="Crosby Garrett">
