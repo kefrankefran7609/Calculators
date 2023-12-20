@@ -69,10 +69,10 @@ document.querySelector('input[submit]').addEventListener('click', async () => {
 document.querySelector('form[search]').addEventListener('submit', (e) => {
  e.preventDefault()
  if(document.querySelector('[searchfield]').value != "")
- location.href = "https://cfhs.bubbleapps.io/version-live/?page=search%20nav&find=" + document.querySelector('[searchfield]').value
+ location.href = "https://cumbriafhs.com/?page=search%20nav&find=" + document.querySelector('[searchfield]').value
 })
 
 document.querySelector('[searchicon]').addEventListener('click', (e) => {
     if(document.querySelector('[searchfield]').value != "")
-    location.href = "https://cfhs.bubbleapps.io/version-live/?page=search%20nav&find=" + document.querySelector('[searchfield]').value
+    location.href = "https://cumbriafhs.com/?page=search%20nav&find=" + document.querySelector('[searchfield]').value
    })
