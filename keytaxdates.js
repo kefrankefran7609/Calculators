@@ -16,8 +16,10 @@ var requestOptions = {
 
 fetch("https://api.airtable.com/v0/apphKFqKdClqcgF26/tblNRouyD9neO2iqt", requestOptions)
   .then(response => response.text())
+	console.log(response)
   .then(data =>  { 
   const parsed = JSON.parse(data)
+	  console.log(parsed)
 
   /* Give the values to the elements on the page from our APi call ** */
    document.querySelector('[task]').textContent = parsed.records[26].fields.Task
