@@ -16,7 +16,6 @@ var requestOptions = {
 
 fetch("https://api.airtable.com/v0/apphKFqKdClqcgF26/tblNRouyD9neO2iqt", requestOptions)
   .then(response => response.text())
-	console.log(response)
   .then(data =>  { 
   const parsed = JSON.parse(data)
 	  console.log(parsed)
