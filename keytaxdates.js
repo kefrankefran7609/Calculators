@@ -5,7 +5,7 @@ window.Webflow.push(() => {
 
 /*   API call to airtable to get Key Tax Dates - Employers */
 var myHeaders = new Headers();
-myHeaders.append("Authorization", "Bearer pat3xBDAwQuPoFK0d.4e6546624b37583aa3cccbb010d0d6d3a3131a8206ae421c8ce67d7bd464df7a");
+myHeaders.append("Authorization", "Bearer patpat3xBDAwQuPoFK0d.4e6546624b37583aa3cccbb010d0d6d3a3131a8206ae421c8ce67d7bd464df7a");
 myHeaders.append("Cookie", "brw=brwrmCv4hFJTjFb7C");
 
 var requestOptions = {
