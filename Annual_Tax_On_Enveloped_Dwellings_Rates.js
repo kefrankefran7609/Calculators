@@ -4,7 +4,7 @@ window.Webflow.push(() => {
 
 /*   API call to airtable to get main allowances table  */
 var myHeaders = new Headers();
-myHeaders.append("Authorization", "Bearer keyPbt2NnvY5saxet");
+myHeaders.append("Authorization", "Bearer pat3xBDAwQuPoFK0d.803ae669a154c3ce52c77c3e8866a94472391ed1178cb8826ed68b5dc3fa8366");
 myHeaders.append("Cookie", "brw=brwrmCv4hFJTjFb7C");
 
 var requestOptions = {
