@@ -115,7 +115,7 @@ var s1rate5
 /*****   API call to airtable to get the data   *****/
 /* Getting data for England and Northern Ireland */
 var myHeaders = new Headers();
-myHeaders.append("Authorization", "Bearer keyPbt2NnvY5saxet");
+myHeaders.append("Authorization", "Bearer pat3xBDAwQuPoFK0d.3807c807f50f8c70f0d5f37373927208612efee25ec4fad2d4864a0b157bdc09");
 myHeaders.append("Cookie", "brw=brwrmCv4hFJTjFb7C");
 
 var requestOptions = {
@@ -146,7 +146,7 @@ fetch("https://api.airtable.com/v0/apphKFqKdClqcgF26/tblcknIFR9BQKOuYY/recAFvSv5
 
 /* Getting data for Wales first buyer */
 var myHeaders = new Headers();
-myHeaders.append("Authorization", "Bearer keyPbt2NnvY5saxet");
+myHeaders.append("Authorization", "Bearer pat3xBDAwQuPoFK0d.3807c807f50f8c70f0d5f37373927208612efee25ec4fad2d4864a0b157bdc09");
 myHeaders.append("Cookie", "brw=brwrmCv4hFJTjFb7C");
 
 var requestOptions = {
@@ -180,7 +180,7 @@ fetch("https://api.airtable.com/v0/apphKFqKdClqcgF26/tblcknIFR9BQKOuYY/recvhhb9T
 
 /* Getting data for Wales second property */
 var myHeaders = new Headers();
-myHeaders.append("Authorization", "Bearer keyPbt2NnvY5saxet");
+myHeaders.append("Authorization", "Bearer pat3xBDAwQuPoFK0d.3807c807f50f8c70f0d5f37373927208612efee25ec4fad2d4864a0b157bdc09");
 myHeaders.append("Cookie", "brw=brwrmCv4hFJTjFb7C");
 
 var requestOptions = {
@@ -216,7 +216,7 @@ fetch("https://api.airtable.com/v0/apphKFqKdClqcgF26/tblcknIFR9BQKOuYY/reckxO034
 
 /* Getting data for Scotland second property */
 var myHeaders = new Headers();
-myHeaders.append("Authorization", "Bearer keyPbt2NnvY5saxet");
+myHeaders.append("Authorization", "Bearer pat3xBDAwQuPoFK0d.3807c807f50f8c70f0d5f37373927208612efee25ec4fad2d4864a0b157bdc09");
 myHeaders.append("Cookie", "brw=brwrmCv4hFJTjFb7C");
 
 var requestOptions = {
@@ -250,7 +250,7 @@ fetch("https://api.airtable.com/v0/apphKFqKdClqcgF26/tblcknIFR9BQKOuYY/recXvQikG
 
 /* Getting data for Scotland second property */
 var myHeaders = new Headers();
-myHeaders.append("Authorization", "Bearer keyPbt2NnvY5saxet");
+myHeaders.append("Authorization", "Bearer pat3xBDAwQuPoFK0d.3807c807f50f8c70f0d5f37373927208612efee25ec4fad2d4864a0b157bdc09");
 myHeaders.append("Cookie", "brw=brwrmCv4hFJTjFb7C");
 
 var requestOptions = {
